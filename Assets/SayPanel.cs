@@ -35,6 +35,8 @@ public class SayPanel : MonoBehaviour {
 
         string language = PlayerPrefs.GetString("Language");
 
+        gameObject.SetActive(true);
+
         AudioSource audio = GetComponent<AudioSource>();
 
         if (language.Length == 0) {

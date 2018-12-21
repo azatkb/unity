@@ -40,154 +40,169 @@ public class MainScreen : MonoBehaviour {
 
     public void State(){
 
-        //string Id = PlayerPrefs.GetString("CurrentUser");
+        string Id = PlayerPrefs.GetString("CurrentUser");
 
-        //if (Id.Length == 0){
+        if (Id.Length == 0)
+        {
 
-        //    level = PlayerPrefs.GetInt("Level");
+            level = PlayerPrefs.GetInt("Level");
 
-        //}
-        //else{
+        }
+        else
+        {
 
-        //    level = ProfileScreen.GetComponent<ProfilePanel>().GetLevel(Id);
+            level = ProfileScreen.GetComponent<ProfilePanel>().GetLevel(Id);
 
-        //}
+        }
 
-        //if (level >= 4)
-        //{
+        if (level >= 4)
+        {
 
-        //    ElephantButton.gameObject.GetComponent<Animator>().Play("ElephantOpenAnimation");
+            ElephantButton.gameObject.GetComponent<Animator>().Play("ElephantOpenAnimation");
 
-        //    FoxButton.gameObject.GetComponent<Animator>().Play("FoxLevel2Animation");
+            FoxButton.gameObject.GetComponent<Animator>().Play("FoxLevel2Animation");
 
-        //    BearButton.gameObject.GetComponent<Animator>().Play("BearOpenAnimation");
+            BearButton.gameObject.GetComponent<Animator>().Play("BearOpenAnimation");
 
-        //    DogButton.gameObject.GetComponent<Animator>().Play("DogLevel2Animation");
+            DogButton.gameObject.GetComponent<Animator>().Play("DogLevel2Animation");
 
-        //    LadybugButton.gameObject.GetComponent<Animator>().Play("AllAnimationsLadtAnimation");
+            LadybugButton.gameObject.GetComponent<Animator>().Play("AllAnimationsLadtAnimation");
 
-        //    Owl.GetComponent<Animator>().Play("OwlLevel4Animation");
-
-
-        //}
-        //else if (level >= 3)
-        //{
-
-        //    ElephantButton.gameObject.GetComponent<Animator>().Play("ElephantOpenAnimation");
-
-        //    FoxButton.gameObject.GetComponent<Animator>().Play("FoxLevel2Animation");
-
-        //    BearButton.gameObject.GetComponent<Animator>().Play("BearOpenAnimation");
-
-        //    DogButton.gameObject.GetComponent<Animator>().Play("DogLevel2Animation");
-
-        //    LadybugButton.gameObject.GetComponent<Animator>().Play("LadyBugAnimation");
-
-        //    Owl.GetComponent<Animator>().Play("OwlLevel4Animation");
-
-        //}
-        //else if (level >= 2)
-        //{
-
-        //    ElephantButton.gameObject.GetComponent<Animator>().Play("ElephantOpenAnimation");
-
-        //    FoxButton.gameObject.GetComponent<Animator>().Play("FoxLevel2Animation");
-
-        //    BearButton.gameObject.GetComponent<Animator>().Play("BearOpenAnimation");
-
-        //    DogButton.gameObject.GetComponent<Animator>().Play("DogAnimation");
-
-        //    LadybugButton.gameObject.GetComponent<Animator>().Play("LadyBugAnimation");
-
-        //    Owl.GetComponent<Animator>().Play("OwlLevel3Animation");
-
-        //}
-        //else if (level >= 1 )
-        //{
+            Owl.GetComponent<Animator>().Play("OwlLevel4Animation");
 
 
-        //    ElephantButton.gameObject.GetComponent<Animator>().Play("ElephantOpenAnimation");
+        }
+        else if (level >= 3)
+        {
 
-        //    FoxButton.gameObject.GetComponent<Animator>().Play("FoxLevel2Animation");
+            ElephantButton.gameObject.GetComponent<Animator>().Play("ElephantOpenAnimation");
 
-        //    BearButton.gameObject.GetComponent<Animator>().Play("BearAnimation");
+            FoxButton.gameObject.GetComponent<Animator>().Play("FoxLevel2Animation");
 
-        //    DogButton.gameObject.GetComponent<Animator>().Play("DogAnimation");
+            BearButton.gameObject.GetComponent<Animator>().Play("BearOpenAnimation");
 
-        //    LadybugButton.gameObject.GetComponent<Animator>().Play("LadyBugAnimation");
+            DogButton.gameObject.GetComponent<Animator>().Play("DogLevel2Animation");
 
-        //    Owl.GetComponent<Animator>().Play("OwlLevel2Animation");
+            LadybugButton.gameObject.GetComponent<Animator>().Play("LadyBugAnimation");
 
-        //}
-        //else if (level == 0)
-        //{
-        //    ElephantButton.gameObject.GetComponent<Animator>().Play("ElephantAnimation");
+            Owl.GetComponent<Animator>().Play("OwlLevel4Animation");
 
-        //    FoxButton.gameObject.GetComponent<Animator>().Play("FoxAnimation");
+        }
+        else if (level >= 2)
+        {
 
-        //    BearButton.gameObject.GetComponent<Animator>().Play("BearAnimation");
+            ElephantButton.gameObject.GetComponent<Animator>().Play("ElephantOpenAnimation");
 
-        //    DogButton.gameObject.GetComponent<Animator>().Play("DogAnimation");
+            FoxButton.gameObject.GetComponent<Animator>().Play("FoxLevel2Animation");
 
-        //    LadybugButton.gameObject.GetComponent<Animator>().Play("LadyBugAnimation");
+            BearButton.gameObject.GetComponent<Animator>().Play("BearOpenAnimation");
 
-        //    Owl.GetComponent<Animator>().Play("OwlLevel1Animation");
-        //}
+            DogButton.gameObject.GetComponent<Animator>().Play("DogAnimation");
 
-        //ElephantButton.GetComponent<Button>().onClick.AddListener(() => {
+            LadybugButton.gameObject.GetComponent<Animator>().Play("LadyBugAnimation");
 
-        //    ElephantBook.SetActive(true);
-        //    ElephantBook.GetComponent<BookBehavior>().PlayName();
+            Owl.GetComponent<Animator>().Play("OwlLevel3Animation");
 
-        //});
+        }
+        else if (level >= 1)
+        {
 
-        //FoxButton.GetComponent<Button>().onClick.AddListener(() => {
 
-        //    if(level < 1){
-        //        ForbiddenPanel.GetComponent<CloudScript>().Forbidden();
-        //    }
-        //    else{
-        //        FoxBook.SetActive(true);
-        //        FoxBook.GetComponent<FoxBookBehavior>().PlayName();
-        //    }
+            ElephantButton.gameObject.GetComponent<Animator>().Play("ElephantOpenAnimation");
 
-        //});
+            FoxButton.gameObject.GetComponent<Animator>().Play("FoxLevel2Animation");
 
-        //BearButton.GetComponent<Button>().onClick.AddListener(() => {
+            BearButton.gameObject.GetComponent<Animator>().Play("BearAnimation");
 
-        //    if (level < 2) {
-        //        ForbiddenPanel2.GetComponent<CloudScript>().Forbidden();
-        //    }
-        //    else{
-        //        BearBook.SetActive(true);
-        //        BearBook.GetComponent<BearBookPreviewBehavior>().PlayName();
-        //    }
+            DogButton.gameObject.GetComponent<Animator>().Play("DogAnimation");
 
-        //});
+            LadybugButton.gameObject.GetComponent<Animator>().Play("LadyBugAnimation");
 
-        //DogButton.onClick.AddListener(() => {
+            Owl.GetComponent<Animator>().Play("OwlLevel2Animation");
 
-        //    if (level < 3){
-        //        ForbiddenPanel3.GetComponent<CloudScript>().Forbidden();
-        //    }
-        //    else{
-        //        DogBugBook.SetActive(true);
-        //        DogBugBook.GetComponent<DogBookPreviewBehavior>().PlayName();
-        //    }
+        }
+        else if (level == 0)
+        {
+            ElephantButton.gameObject.GetComponent<Animator>().Play("ElephantAnimation");
 
-        //});
+            FoxButton.gameObject.GetComponent<Animator>().Play("FoxAnimation");
 
-        //LadybugButton.onClick.AddListener(() => {
+            BearButton.gameObject.GetComponent<Animator>().Play("BearAnimation");
 
-        //    if (level < 4){
-        //        ForbiddenPanel4.GetComponent<CloudScript>().Forbidden();
-        //    }
-        //    else{
-        //        LadyBugBook.SetActive(true);
-        //        LadyBugBook.GetComponent<LadybugBookPreviewBehavior>().PlayName();
-        //    }
+            DogButton.gameObject.GetComponent<Animator>().Play("DogAnimation");
 
-        //});
+            LadybugButton.gameObject.GetComponent<Animator>().Play("LadyBugAnimation");
+
+            Owl.GetComponent<Animator>().Play("OwlLevel1Animation");
+        }
+
+        ElephantButton.GetComponent<Button>().onClick.AddListener(() =>
+        {
+
+            ElephantBook.SetActive(true);
+            ElephantBook.GetComponent<BookBehavior>().PlayName();
+
+        });
+
+        FoxButton.GetComponent<Button>().onClick.AddListener(() =>
+        {
+
+            if (level < 1)
+            {
+                ForbiddenPanel.GetComponent<CloudScript>().Forbidden();
+            }
+            else
+            {
+                FoxBook.SetActive(true);
+                FoxBook.GetComponent<FoxBookBehavior>().PlayName();
+            }
+
+        });
+
+        BearButton.GetComponent<Button>().onClick.AddListener(() =>
+        {
+
+            if (level < 2)
+            {
+                ForbiddenPanel2.GetComponent<CloudScript>().Forbidden();
+            }
+            else
+            {
+                BearBook.SetActive(true);
+                BearBook.GetComponent<BearBookPreviewBehavior>().PlayName();
+            }
+
+        });
+
+        DogButton.onClick.AddListener(() =>
+        {
+
+            if (level < 3)
+            {
+                ForbiddenPanel3.GetComponent<CloudScript>().Forbidden();
+            }
+            else
+            {
+                DogBugBook.SetActive(true);
+                DogBugBook.GetComponent<DogBookPreviewBehavior>().PlayName();
+            }
+
+        });
+
+        LadybugButton.onClick.AddListener(() =>
+        {
+
+            if (level < 4)
+            {
+                ForbiddenPanel4.GetComponent<CloudScript>().Forbidden();
+            }
+            else
+            {
+                LadyBugBook.SetActive(true);
+                LadyBugBook.GetComponent<LadybugBookPreviewBehavior>().PlayName();
+            }
+
+        });
 
     }
 
