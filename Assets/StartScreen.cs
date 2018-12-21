@@ -16,22 +16,20 @@ public class StartScreen : MonoBehaviour {
 
         yield return new WaitForSeconds(1);
 
-        //string language = PlayerPrefs.GetString("Language");
+        string language = PlayerPrefs.GetString("Language");
 
-        //if ((string.IsNullOrEmpty(language)) || (language.Length == 0))
-        //{
+        if ((string.IsNullOrEmpty(language)) || (language.Length == 0))
+        {
 
             choosePanel.SetActive(true);
 
-        //}
-        //else
-        //{
+        }
+        else
+        {
 
-        //    choosePanel.SetActive(false);
+            choosePanel.SetActive(false);
 
-        //    //}
-
-        //}
+        }
     }
 
 }

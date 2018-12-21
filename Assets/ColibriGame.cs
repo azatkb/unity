@@ -23,7 +23,7 @@ namespace Assets.scripts
 
             this.voiceObject = GameObject.FindGameObjectWithTag("Voice");
             this.appObject = GameObject.FindGameObjectWithTag("App");
-            this.recordManager = GameObject.FindGameObjectWithTag("recordManager");
+            //this.recordManager = GameObject.FindGameObjectWithTag("recordManager");
 
         }
 

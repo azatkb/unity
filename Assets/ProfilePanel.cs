@@ -100,6 +100,7 @@ public class ProfilePanel : MonoBehaviour {
         //    Debug.Log(UserName.Length);
 
         //    if (UserName.Length > 0)
+        //    {
 
         //        if (PlayerPrefs.HasKey(UserName))
         //        {

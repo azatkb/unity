@@ -313,8 +313,8 @@ public class Translations : MonoBehaviour {
 
 
         if (language == "En") {
-            //ElephantGame1En.SetActive(true);
-            //ElephantGame1Tj.SetActive(false);
+            ElephantGame1En.SetActive(true);
+            ElephantGame1Tj.SetActive(false);
             //ElephantGame3En.SetActive(true);
             //ElephantGame3Tj.SetActive(false);
             //FoxGame1En.SetActive(true);
@@ -325,12 +325,12 @@ public class Translations : MonoBehaviour {
             //LadyGame3Tj.SetActive(false);
 
             //VoiceBehavior.GetComponent<VoiceBahavior>().TranslateEn();
-            //SoonImage.sprite = SoonSpriteEn1;
-            //SoonImage2.sprite = SoonSpriteEn2;
+            SoonImage.sprite = SoonSpriteEn1;
+            SoonImage2.sprite = SoonSpriteEn2;
         }
         else{
-            //ElephantGame1En.SetActive(false);
-            //ElephantGame1Tj.SetActive(true);
+            ElephantGame1En.SetActive(false);
+            ElephantGame1Tj.SetActive(true);
             //ElephantGame3En.SetActive(false);
             //ElephantGame3Tj.SetActive(true);
             //FoxGame1En.SetActive(false);
@@ -342,8 +342,8 @@ public class Translations : MonoBehaviour {
 
             //VoiceBehavior.GetComponent<VoiceBahavior>().TranslateTj();
 
-            //SoonImage.sprite = SoonSpriteTj1;
-            //SoonImage2.sprite = SoonSpriteTj2;
+            SoonImage.sprite = SoonSpriteTj1;
+            SoonImage2.sprite = SoonSpriteTj2;
 
         }
 
@@ -395,7 +395,7 @@ public class Translations : MonoBehaviour {
             ParentsTitle.GetComponent<Text>().text = Lang["label_parents_title"].ToString();
             ParentsText.GetComponent<Text>().text = Lang["label_parents_text"].ToString();
 
-            //    ElephantReadBook.GetComponent<Text>().text = Lang["label_read_book"].ToString();
+            ElephantReadBook.GetComponent<Text>().text = Lang["label_read_book"].ToString();
             //    //ElephantColseBook.GetComponent<Text>().text = Lang["label_return"].ToString();
 
             //    FoxReadBook.GetComponent<Text>().text = Lang["label_read_book"].ToString();
@@ -445,7 +445,7 @@ public class Translations : MonoBehaviour {
             //    LadyBugGame3Title.GetComponent<Text>().text = Lang["label_puzzle_sun"].ToString();
             //    LadyBugGame4Title.GetComponent<Text>().text = Lang["label_grow_apricots"].ToString();
 
-                PreSchooleText.GetComponent<Text>().text = Lang["label_preschoole"].ToString();
+            PreSchooleText.GetComponent<Text>().text = Lang["label_preschoole"].ToString();
                 GradeText.GetComponent<Text>().text = Lang["label_grade"].ToString();
                 Grade2Text.GetComponent<Text>().text = Lang["label_grade2"].ToString();
 
@@ -490,13 +490,13 @@ public class Translations : MonoBehaviour {
             //    Book5PreviewTitle.GetComponent<Text>().text = Lang["label_the_ladybug"].ToString();
             //    Game5PreviewTitle.GetComponent<Text>().text = Lang["label_the_ladybug"].ToString();
 
-            //RecordText1.GetComponent<Text>().text = Lang["label_the_record"].ToString();
+            RecordText1.GetComponent<Text>().text = Lang["label_the_record"].ToString();
             //RecordText2.GetComponent<Text>().text = Lang["label_the_record"].ToString();
             //RecordText3.GetComponent<Text>().text = Lang["label_the_record"].ToString();
             //RecordText4.GetComponent<Text>().text = Lang["label_the_record"].ToString();
             //RecordText5.GetComponent<Text>().text = Lang["label_the_record"].ToString();
 
-            //    BookAuthor1.GetComponent<Text>().text = Lang["label_book_author1"].ToString();
+            BookAuthor1.GetComponent<Text>().text = Lang["label_book_author1"].ToString();
             //    BookAuthor2.GetComponent<Text>().text = Lang["label_book_author2"].ToString();
             //    BookAuthor3.GetComponent<Text>().text = Lang["label_book_author3"].ToString();
             //    BookAuthor4.GetComponent<Text>().text = Lang["label_book_author4"].ToString();
