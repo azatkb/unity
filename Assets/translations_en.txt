@@ -1,0 +1,134 @@
+﻿{
+	"title_settings": "Settings",
+	"label_language": "Language",
+	"label_volume": "Volume",
+	"label_music": "Music",
+	"label_help": "Help",
+	"label_ok": "OK",
+	"label_cancel": "CANCEL",
+	"label_about": "About",
+	"label_about_title": "About the application",
+	"label_about_text": "This publication is made possible by the support of the Aga Khan Foundation. Access free interesting and useful books in Tajik and English, approved by leading educators, that you can read with your kids and students.",
+
+	"label_teachers_title": "Tips for teachers",
+	"label_teachers_text": "Use interactive and fun games to help kids improve reading comprehension and develop critical thinking skills. Explore story books, complete fun and exciting games based on the stories. Make sure you ask questions.Use the question 'Why?' as often as possible.",
+
+	"label_parents_title": "Tips for parents",
+	"label_parents_text": "Beginning to read should be easy and fun. Talking about the books helps. If kids ask you what the words on the page say, tell and explain the meaning of them.It doesn’ t matter if they cannot read the words themselves. Ask questions on the content of the book.Always use the question' Why ?' Encourage children to ask different questions. Answer to all your child’ s questions. After reading, play role game with your child.",
+	"title_profile": "Profile",
+	"label_name": "Name",
+	"label_level": "Level",
+	"label_add_player": "Add a new player",
+	"label_add_photo": "Add photo",
+	"label_delete_photo": "Delete photo",
+
+	"title_exit": "Quit the game?",
+	"label_yes": "Yes",
+	"label_no": "No",
+
+	"label_hiding_beetle": "Find the hiding beetle",
+	"label_return": "Return",
+	"label_read_book": "READ TO ME",
+	"label_how_many_apricots": "How many apricots are there on the tree? Count and select  the right  number",
+	"label_beetle_play_with": "Who did the beetle play with?",
+	"label_puzzle_sun": "Name a picture",
+	"label_chicken": "Find all the chicks in the eggs",
+	"label_dearest_child": "The dearest child",
+	"label_grow_apricots": "Plant and water the tree to grow apricots",
+	"label_read_together": "Let’s read together!",
+	"label_hiding_behind_cloud": "You are hiding behind a cloud!",
+	"label_next_word": "Next word",
+
+	"label_help_puppy_clean": "Help the puppy become clean",
+	"label_animals_names_letters": "What letters do these animals’ names start with?",
+	"label_play_together": "Let’s play together now!",
+	"label_collect_puzzle": "Collect the puzzle",
+	"label_find_chicks": "Find all the chicks in the egg",
+
+	"label_toss_apples": "Toss the apples into the elephant’s mouth",
+	"label_elephant_sound": "What sound does the elephant make? Listen and select the appropriate letter.",
+	"label_count_apples_together": "Listen and select the right basket with apples",
+	"label_learn_draw_elephant": "Let’s learn to draw an elephant!",
+	"label_prepare_draw_elephant": "Please prepare a sheet of paper, a pencil, and an eraser. When you ready, please tap the “Next” button",
+
+	"label_what_animal_fox": "What animal is this?",
+	"label_erase_animal_not_story": "Erase the animal that was not in the story",
+	"label_name_animal": "Match the names of the animals with their pictures",
+	"label_collect_puzzle_2": "Put the puzzle together",
+	"label_learn_draw_rabbit": "Let’s learn to draw an rabbit!",
+	"label_prepare_draw_rabbit": "Please prepare a sheet of paper, a pencil, and an eraser. When you ready, please tap the “Next” button",
+
+	"label_help_collect_mushrooms": "Help the children collect the mushrooms into the basket",
+	"label_match_names_children": "Match the names of the children to the characters",
+	"label_find_animal_name": "What animal do you see? Fill in the correct letters",
+	"label_build_house_children": "Build the house the children lived in",
+	"label_repeat_after_me": "Who happened to be bear’s best friend?",
+	"label_one_elephant": "One elephant",
+	"label_two_rabbits": "Two rabbits",
+	"label_three_apples": "Three apples",
+	"label_four_flowers": "Four flowers",
+	"label_preschoole": "Preschool",
+	"label_grade": "Grade 1-2",
+	"label_grade2": "Grade 3-4",
+	"label_match_sount": "Listen and make a correct word",
+
+    "label_intro": "Hi! I am Donoyak and I am so excited to go to school this year. Finally, nobody will call me the little one. I bet you also want to grow up soon. Do you want to find out how?",
+    "label_intro2": "When I came out of my egg, I was very small and didn’t know anything.",
+    "label_intro3": "To grow up and become smart, I had to read a lot and play challenging games! Do you want to experience the same with me? ",
+    "label_intro4": "On the screen you see five levels with fun books and exciting tasks and games. At the end of each level, there is food for me to grow smart and big. Help me get the food by reading the books and playing games! Let's start playing by visiting our friend The Elephant!",
+
+
+    "label_soon": "This level will be available soon",
+
+    "label_grow": "How did you grow up?",
+    "label_grow2": "Sure, let’s do it!",
+    "label_grow3": "Yes, tell me!",
+    "label_grow4": "Let’s go!",
+
+    "label_choose": "Choose the level",
+    "label_gotit": "Got it",
+    "label_cloud": "Oh you need to wake up an elephant first",
+    "label_cloud2": "Oh you need to wake up a fox first",
+    "label_cloud3": "Oh you need to wake up a bear first",
+    "label_cloud4": "Oh you need to wake up a dog first",
+
+    "label_the_elephant": "The Elephant",
+    "label_the_fox": "The dearest child",
+    "label_the_bear": "Mushroom Gathering",
+    "label_the_dog": "Dalerjon’s Dream",
+    "label_the_ladybug": "The Sun and The Beetle",
+
+    "label_the_record": "READ MYSELF",
+
+    "label_book_author1": "Azizi Aziz",
+    "label_book_author2": "Nargishi Murodal",
+    "label_book_author3": "Firuza Khozanazarova",
+    "label_book_author4": "Gulniso Rizvonshoeva",
+    "label_book_author5": "Gulsara Avazova",
+
+    "label_return":"GO BACK",
+
+    "label_record":"Records",
+    "label_record_book_1":"The Elephant Record",
+    "label_record_book_2":"The dearest child Record",
+    "label_record_book_3":"Mushroom Gathering Record",
+    "label_record_book_4":"Dalerjon’s Dream Record",
+    "label_record_book_5":"The Sun and The Beetle Record",
+
+    "label_feeding":"Now feed me by sliding the food into my mouth!",
+
+    "label_fox":"FOX",
+    "label_wolf":"WOLF",
+    "label_bear":"BEAR",
+    "label_rabbit":"RABBIT",
+
+    "label_D" : "D",
+    "label_C" : "C",
+    "label_H" : "H",
+    
+    "label_G" : "G",
+    "label_S" : "S",
+    "label_R" : "R"
+
+
+}
