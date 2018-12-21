@@ -24,9 +24,9 @@ public class IntroPannel : MonoBehaviour{
         OkButton.onClick.AddListener(() =>
         {
 
-            //Panel.SetActive(true);
-            //gameObject.SetActive(false);
-            //Panel.GetComponent<GrowPannel>().PlayIntro();
+            Panel.SetActive(true);
+            gameObject.SetActive(false);
+            Panel.GetComponent<GrowPannel>().PlayIntro();
 
         });
 

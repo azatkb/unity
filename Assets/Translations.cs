@@ -352,8 +352,8 @@ public class Translations : MonoBehaviour {
 
             string langText = sr.ReadToEnd();
 
-            try
-            {
+            //try
+            //{
 
                 JsonData Lang = JsonMapper.ToObject(langText);
 
@@ -449,18 +449,18 @@ public class Translations : MonoBehaviour {
                 Grade2Text.GetComponent<Text>().text = Lang["label_grade2"].ToString();
 
                 IntroText.GetComponent<Text>().text = Lang["label_intro"].ToString();
-                //    IntroText2.GetComponent<Text>().text = Lang["label_intro2"].ToString();
-                //    IntroText3.GetComponent<Text>().text = Lang["label_intro3"].ToString();
-                //    IntroText4.GetComponent<Text>().text = Lang["label_intro4"].ToString();
+                IntroText2.GetComponent<Text>().text = Lang["label_intro2"].ToString();
+                IntroText3.GetComponent<Text>().text = Lang["label_intro3"].ToString();
+            //    IntroText4.GetComponent<Text>().text = Lang["label_intro4"].ToString();
 
-                //    SoonText.GetComponent<Text>().text = Lang["label_soon"].ToString();
+            //    SoonText.GetComponent<Text>().text = Lang["label_soon"].ToString();
 
-                GrowText.GetComponent<Text>().text = Lang["label_grow3"].ToString();
-                //    GrowText2.GetComponent<Text>().text = Lang["label_grow"].ToString();
-                //    GrowText3.GetComponent<Text>().text = Lang["label_grow2"].ToString();
-                //    GrowText4.GetComponent<Text>().text = Lang["label_grow4"].ToString();
+            GrowText.GetComponent<Text>().text = Lang["label_grow3"].ToString();
+                GrowText2.GetComponent<Text>().text = Lang["label_grow"].ToString();
+            GrowText3.GetComponent<Text>().text = Lang["label_grow2"].ToString();
+            //    GrowText4.GetComponent<Text>().text = Lang["label_grow4"].ToString();
 
-                ChooseLevel.GetComponent<Text>().text = Lang["label_choose"].ToString();
+            ChooseLevel.GetComponent<Text>().text = Lang["label_choose"].ToString();
                 //    GotItButtonText.GetComponent<Text>().text = Lang["label_gotit"].ToString();
 
                 //    CloudText.GetComponent<Text>().text = Lang["label_cloud"].ToString();
@@ -534,12 +534,12 @@ public class Translations : MonoBehaviour {
                 //    FoxPaintOk.GetComponent<Text>().text = Lang["label_ok"].ToString();
 
 
-            }
-            catch
-            {
+            //}
+            //catch
+            //{
 
-                Debug.Log("Translate Error");
-            }
+            //    Debug.Log("Translate Error");
+            //}
 
 
 

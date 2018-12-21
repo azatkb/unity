@@ -44,59 +44,62 @@ public class GrowPannel : MonoBehaviour{
 
     void Start() {
 
-        //this.Sources = GetComponent<AudioSource>();
+        this.Sources = GetComponent<AudioSource>();
 
         gameObject.SetActive(false);
 
-        //GrowUpPanel2.SetActive(false);
+        GrowUpPanel2.SetActive(false);
 
-        //Sources.PlayOneShot(voice);
+        Sources.PlayOneShot(voice);
 
-        //OkButton.onClick.AddListener(() => {
+        OkButton.onClick.AddListener(() =>
+        {
 
-        //    GrowUpPanel1.SetActive(false);
+            GrowUpPanel1.SetActive(false);
 
-        //    GrowUpPanel2.SetActive(true);
+            GrowUpPanel2.SetActive(true);
 
-        //    if(Sources.isPlaying){
+            if (Sources.isPlaying)
+            {
 
-        //        Sources.Stop();
+                Sources.Stop();
 
-        //    }
+            }
 
-        //    string language = PlayerPrefs.GetString("Language");
+            string language = PlayerPrefs.GetString("Language");
 
-        //    if (language.Length == 0)
-        //    {
-        //        language = "En";
-        //    }
+            if (language.Length == 0)
+            {
+                language = "En";
+            }
 
-        //    if (language == "En")
-        //    {
-        //        Sources.PlayOneShot(voice2);
+            if (language == "En")
+            {
+                Sources.PlayOneShot(voice2);
 
-        //    }
-        //    else
-        //    {
-        //        Sources.PlayOneShot(voice2_tj);
-        //    }
+            }
+            else
+            {
+                Sources.PlayOneShot(voice2_tj);
+            }
 
-        //});
+        });
 
-        //OkButton2.onClick.AddListener(()=> {
+        OkButton2.onClick.AddListener(() =>
+        {
 
-        //    Panel.SetActive(true);
+            Panel.SetActive(true);
 
-        //    gameObject.SetActive(false);
+            gameObject.SetActive(false);
 
-        //    Panel.GetComponent<MainScreen>().State();
+            Panel.GetComponent<MainScreen>().State();
 
-        //    SyaPanel.SetActive(true);
+            SyaPanel.SetActive(true);
 
-        //    SyaPanel.GetComponent<SayPanel>().PlaySound();
+            SyaPanel.GetComponent<SayPanel>().PlaySound();
 
 
-        //});
+        });
 
     }
 

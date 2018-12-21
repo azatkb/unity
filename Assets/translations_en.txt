@@ -106,7 +106,7 @@
     "label_book_author4": "Gulniso Rizvonshoeva",
     "label_book_author5": "Gulsara Avazova",
 
-    "label_return":"GO BACK",
+    "label_return2":"GO BACK",
 
     "label_record":"Records",
     "label_record_book_1":"The Elephant Record",
