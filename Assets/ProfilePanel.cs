@@ -55,103 +55,113 @@ public class ProfilePanel : MonoBehaviour {
 
         Panel.SetActive(false);
 
-        //AddUserPanel.SetActive(false);
+        AddUserPanel.SetActive(false);
 
-        //CloseButton.onClick.AddListener(() => {
+        CloseButton.onClick.AddListener(() =>
+        {
 
-        //    this.Panel.SetActive(false);
+            this.Panel.SetActive(false);
 
-        //});
+        });
 
-        //OkButton.onClick.AddListener(() => {
+        OkButton.onClick.AddListener(() =>
+        {
 
-        //    this.Panel.SetActive(false);
+            this.Panel.SetActive(false);
 
-        //});
+        });
 
-        //CanselButton.onClick.AddListener(() => {
+        CanselButton.onClick.AddListener(() =>
+        {
 
-        //    this.Panel.SetActive(false);
+            this.Panel.SetActive(false);
 
-        //});
+        });
 
-        //CloseButtonAddUser.onClick.AddListener(() => {
+        CloseButtonAddUser.onClick.AddListener(() =>
+        {
 
-        //    this.AddUserPanel.SetActive(false);
+            this.AddUserPanel.SetActive(false);
 
-        //});
+        });
 
-        //AddUserButton.onClick.AddListener(() => {
+        AddUserButton.onClick.AddListener(() =>
+        {
 
-        //    this.AddUserPanel.SetActive(true);
+            this.AddUserPanel.SetActive(true);
 
-        //});
+        });
 
-        //AddUserConfirmButton.onClick.AddListener(() => {
+        AddUserConfirmButton.onClick.AddListener(() =>
+        {
 
-        //   string UserName =  AddUserText.text;
+            string UserName = AddUserText.text;
 
-        //    Debug.Log(UserName.Length);
+            Debug.Log(UserName.Length);
 
-        //   if(UserName.Length > 0){
+            if (UserName.Length > 0)
+            {
 
-        //        if (PlayerPrefs.HasKey(UserName))
-        //        {
-        //            return;
-        //        }
+                if (PlayerPrefs.HasKey(UserName))
+                {
+                    return;
+                }
 
-        //        Person user = new Person();
+                Person user = new Person();
 
-        //        user.Id = Guid.NewGuid().ToString();
+                user.Id = Guid.NewGuid().ToString();
 
-        //        user.Name = UserName;
+                user.Name = UserName;
 
-        //        user.Level = 0;
+                user.Level = 0;
 
-        //        if (AddphotoTexture != null)
-        //        {
+                if (AddphotoTexture != null)
+                {
 
-        //            user.Image = Texture2DToBase64(AddphotoTexture);
+                    user.Image = Texture2DToBase64(AddphotoTexture);
 
-        //        }
+                }
 
-        //        AllUsers.Add(user);
+                AllUsers.Add(user);
 
-        //        SaveUser();
+                SaveUser();
 
-        //        AddUserText.text = "";
+                AddUserText.text = "";
 
-        //        AddphotoTexture = null;
+                AddphotoTexture = null;
 
-        //        AddUserPanel.SetActive(false);
+                AddUserPanel.SetActive(false);
 
-        //        GetUsers();
-        //    }
+                GetUsers();
+            }
 
 
-        //});
+        });
 
-        //UserRowButton.onClick.AddListener(() =>{
+        UserRowButton.onClick.AddListener(() =>
+        {
 
-        //    GetCurrentUser(UserID);
+            GetCurrentUser(UserID);
 
-        //});
+        });
 
-        //UserRowButton1.onClick.AddListener(() => {
+        UserRowButton1.onClick.AddListener(() =>
+        {
 
-        //    GetCurrentUser(UserID2);
+            GetCurrentUser(UserID2);
 
-        //});
+        });
 
-        //UserRowButton2.onClick.AddListener(() => {
+        UserRowButton2.onClick.AddListener(() =>
+        {
 
-        //    GetCurrentUser(UserID3);
+            GetCurrentUser(UserID3);
 
-        //});
+        });
 
-        //GetUsers();
+        GetUsers();
 
-   
+
 
     }
 
