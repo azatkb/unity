@@ -365,7 +365,7 @@ public class Translations : MonoBehaviour {
             OkText.GetComponent<Text>().text = Lang["label_ok"].ToString();
 
 
-            //    TitleProfile.GetComponent<Text>().text = Lang["title_profile"].ToString();
+            //TitleProfile.GetComponent<Text>().text = Lang["title_profile"].ToString();
             //    NameText.GetComponent<Text>().text = Lang["label_name"].ToString();
             //    LavelText.GetComponent<Text>().text = Lang["label_level"].ToString();
 
@@ -379,20 +379,21 @@ public class Translations : MonoBehaviour {
             //    ProfileAddText.GetComponent<Text>().text = Lang["label_add_player"].ToString();
             //    ProfileNewUserText.GetComponent<Text>().text = Lang["label_name"].ToString();
 
-            //    ExitText.GetComponent<Text>().text = Lang["title_exit"].ToString();
-            //    YesText.GetComponent<Text>().text = Lang["label_yes"].ToString();
-            //    NoText.GetComponent<Text>().text = Lang["label_no"].ToString();
+            ExitText.GetComponent<Text>().text = Lang["title_exit"].ToString();
+            YesText.GetComponent<Text>().text = Lang["label_yes"].ToString();
+            NoText.GetComponent<Text>().text = Lang["label_no"].ToString();
             AboutText.GetComponent<Text>().text = Lang["label_about"].ToString();
 
 
             AboutTitle.GetComponent<Text>().text = Lang["label_about_title"].ToString();
             AboutBody.GetComponent<Text>().text = Lang["label_about_text"].ToString();
+            AboutBody.GetComponent<Text>().text = Lang["label_about_text"].ToString();
 
-            //    TechersTitle.GetComponent<Text>().text = Lang["label_teachers_title"].ToString();
-            //    TechersText.GetComponent<Text>().text = Lang["label_teachers_text"].ToString();
+            TechersTitle.GetComponent<Text>().text = Lang["label_teachers_title"].ToString();
+            TechersText.GetComponent<Text>().text = Lang["label_teachers_text"].ToString();
 
-            //    ParentsTitle.GetComponent<Text>().text = Lang["label_parents_title"].ToString();
-            //    ParentsText.GetComponent<Text>().text = Lang["label_parents_text"].ToString();
+            ParentsTitle.GetComponent<Text>().text = Lang["label_parents_title"].ToString();
+            ParentsText.GetComponent<Text>().text = Lang["label_parents_text"].ToString();
 
             //    ElephantReadBook.GetComponent<Text>().text = Lang["label_read_book"].ToString();
             //    //ElephantColseBook.GetComponent<Text>().text = Lang["label_return"].ToString();
@@ -444,7 +445,7 @@ public class Translations : MonoBehaviour {
             //    LadyBugGame3Title.GetComponent<Text>().text = Lang["label_puzzle_sun"].ToString();
             //    LadyBugGame4Title.GetComponent<Text>().text = Lang["label_grow_apricots"].ToString();
 
-            PreSchooleText.GetComponent<Text>().text = Lang["label_preschoole"].ToString();
+                PreSchooleText.GetComponent<Text>().text = Lang["label_preschoole"].ToString();
                 GradeText.GetComponent<Text>().text = Lang["label_grade"].ToString();
                 Grade2Text.GetComponent<Text>().text = Lang["label_grade2"].ToString();
 
@@ -461,77 +462,77 @@ public class Translations : MonoBehaviour {
                 GrowText4.GetComponent<Text>().text = Lang["label_grow4"].ToString();
 
                 ChooseLevel.GetComponent<Text>().text = Lang["label_choose"].ToString();
-                //    GotItButtonText.GetComponent<Text>().text = Lang["label_gotit"].ToString();
+            //    GotItButtonText.GetComponent<Text>().text = Lang["label_gotit"].ToString();
 
-                //    CloudText.GetComponent<Text>().text = Lang["label_cloud"].ToString();
-                //    CloudText2.GetComponent<Text>().text = Lang["label_cloud2"].ToString();
-                //    CloudText3.GetComponent<Text>().text = Lang["label_cloud3"].ToString();
-                //    CloudText4.GetComponent<Text>().text = Lang["label_cloud4"].ToString();
-
-
-                //    Book1Title.GetComponent<Text>().text = Lang["label_the_elephant"].ToString();
-                //    Book1PreviewTitle.GetComponent<Text>().text = Lang["label_the_elephant"].ToString();
-                //    Game1PreviewTitle.GetComponent<Text>().text = Lang["label_the_elephant"].ToString();
-
-                //    Book2Title.GetComponent<Text>().text = Lang["label_the_fox"].ToString();
-                //    Book2PreviewTitle.GetComponent<Text>().text = Lang["label_the_fox"].ToString();
-                //    Game2PreviewTitle.GetComponent<Text>().text = Lang["label_the_fox"].ToString();
-
-                //    Book3Title.GetComponent<Text>().text = Lang["label_the_bear"].ToString();
-                //    Book3PreviewTitle.GetComponent<Text>().text = Lang["label_the_bear"].ToString();
-                //    Game3PreviewTitle.GetComponent<Text>().text = Lang["label_the_bear"].ToString();
-
-                //    Book4Title.GetComponent<Text>().text = Lang["label_the_dog"].ToString();
-                //    Book4PreviewTitle.GetComponent<Text>().text = Lang["label_the_dog"].ToString();
-                //    Game4PreviewTitle.GetComponent<Text>().text = Lang["label_the_dog"].ToString();
-
-                //    Book5Title.GetComponent<Text>().text = Lang["label_the_ladybug"].ToString();
-                //    Book5PreviewTitle.GetComponent<Text>().text = Lang["label_the_ladybug"].ToString();
-                //    Game5PreviewTitle.GetComponent<Text>().text = Lang["label_the_ladybug"].ToString();
-
-                //    RecordText1.GetComponent<Text>().text = Lang["label_the_record"].ToString();
-                //    RecordText2.GetComponent<Text>().text = Lang["label_the_record"].ToString();
-                //    RecordText3.GetComponent<Text>().text = Lang["label_the_record"].ToString();
-                //    RecordText4.GetComponent<Text>().text = Lang["label_the_record"].ToString();
-                //    RecordText5.GetComponent<Text>().text = Lang["label_the_record"].ToString();
-
-                //    BookAuthor1.GetComponent<Text>().text = Lang["label_book_author1"].ToString();
-                //    BookAuthor2.GetComponent<Text>().text = Lang["label_book_author2"].ToString();
-                //    BookAuthor3.GetComponent<Text>().text = Lang["label_book_author3"].ToString();
-                //    BookAuthor4.GetComponent<Text>().text = Lang["label_book_author4"].ToString();
-                //    BookAuthor5.GetComponent<Text>().text = Lang["label_book_author5"].ToString();
-
-                //    GameReturn1.GetComponent<Text>().text = Lang["label_return"].ToString();
-                //    GameReturn2.GetComponent<Text>().text = Lang["label_return"].ToString();
-                //    GameReturn3.GetComponent<Text>().text = Lang["label_return"].ToString();
-                //    GameReturn4.GetComponent<Text>().text = Lang["label_return"].ToString();
-                //    GameReturn5.GetComponent<Text>().text = Lang["label_return"].ToString();
-
-                //    RecorTitle.GetComponent<Text>().text = Lang["label_record"].ToString();
-
-                //    BookRecordName1.GetComponent<Text>().text = Lang["label_record_book_1"].ToString();
-                //    BookRecordName2.GetComponent<Text>().text = Lang["label_record_book_2"].ToString();
-                //    BookRecordName3.GetComponent<Text>().text = Lang["label_record_book_3"].ToString();
-                //    BookRecordName4.GetComponent<Text>().text = Lang["label_record_book_4"].ToString();
-                //    BookRecordName5.GetComponent<Text>().text = Lang["label_record_book_5"].ToString();
-
-                //    TextFeeding.GetComponent<Text>().text = Lang["label_feeding"].ToString();
-
-                //    TextFOX.GetComponent<Text>().text = Lang["label_fox"].ToString();
-                //    TextBEAR.GetComponent<Text>().text = Lang["label_bear"].ToString();
-                //    TextWOLF.GetComponent<Text>().text = Lang["label_wolf"].ToString();
-                //    TextRABBIT.GetComponent<Text>().text = Lang["label_rabbit"].ToString();
+            //    CloudText.GetComponent<Text>().text = Lang["label_cloud"].ToString();
+            //    CloudText2.GetComponent<Text>().text = Lang["label_cloud2"].ToString();
+            //    CloudText3.GetComponent<Text>().text = Lang["label_cloud3"].ToString();
+            //    CloudText4.GetComponent<Text>().text = Lang["label_cloud4"].ToString();
 
 
-                //    TextD.GetComponent<Text>().text = Lang["label_D"].ToString();
-                //    TextC.GetComponent<Text>().text = Lang["label_C"].ToString();
-                //    TextH.GetComponent<Text>().text = Lang["label_H"].ToString();
-                //    TextG.GetComponent<Text>().text = Lang["label_G"].ToString();
-                //    TextS.GetComponent<Text>().text = Lang["label_S"].ToString();
-                //    TextR.GetComponent<Text>().text = Lang["label_R"].ToString();
+            //    Book1Title.GetComponent<Text>().text = Lang["label_the_elephant"].ToString();
+            //    Book1PreviewTitle.GetComponent<Text>().text = Lang["label_the_elephant"].ToString();
+            //    Game1PreviewTitle.GetComponent<Text>().text = Lang["label_the_elephant"].ToString();
 
-                //ElephantPaintOk.GetComponent<Text>().text = Lang["label_ok"].ToString();
-                //    FoxPaintOk.GetComponent<Text>().text = Lang["label_ok"].ToString();
+            //    Book2Title.GetComponent<Text>().text = Lang["label_the_fox"].ToString();
+            //    Book2PreviewTitle.GetComponent<Text>().text = Lang["label_the_fox"].ToString();
+            //    Game2PreviewTitle.GetComponent<Text>().text = Lang["label_the_fox"].ToString();
+
+            //    Book3Title.GetComponent<Text>().text = Lang["label_the_bear"].ToString();
+            //    Book3PreviewTitle.GetComponent<Text>().text = Lang["label_the_bear"].ToString();
+            //    Game3PreviewTitle.GetComponent<Text>().text = Lang["label_the_bear"].ToString();
+
+            //    Book4Title.GetComponent<Text>().text = Lang["label_the_dog"].ToString();
+            //    Book4PreviewTitle.GetComponent<Text>().text = Lang["label_the_dog"].ToString();
+            //    Game4PreviewTitle.GetComponent<Text>().text = Lang["label_the_dog"].ToString();
+
+            //    Book5Title.GetComponent<Text>().text = Lang["label_the_ladybug"].ToString();
+            //    Book5PreviewTitle.GetComponent<Text>().text = Lang["label_the_ladybug"].ToString();
+            //    Game5PreviewTitle.GetComponent<Text>().text = Lang["label_the_ladybug"].ToString();
+
+            //RecordText1.GetComponent<Text>().text = Lang["label_the_record"].ToString();
+            //RecordText2.GetComponent<Text>().text = Lang["label_the_record"].ToString();
+            //RecordText3.GetComponent<Text>().text = Lang["label_the_record"].ToString();
+            //RecordText4.GetComponent<Text>().text = Lang["label_the_record"].ToString();
+            //RecordText5.GetComponent<Text>().text = Lang["label_the_record"].ToString();
+
+            //    BookAuthor1.GetComponent<Text>().text = Lang["label_book_author1"].ToString();
+            //    BookAuthor2.GetComponent<Text>().text = Lang["label_book_author2"].ToString();
+            //    BookAuthor3.GetComponent<Text>().text = Lang["label_book_author3"].ToString();
+            //    BookAuthor4.GetComponent<Text>().text = Lang["label_book_author4"].ToString();
+            //    BookAuthor5.GetComponent<Text>().text = Lang["label_book_author5"].ToString();
+
+            //    GameReturn1.GetComponent<Text>().text = Lang["label_return"].ToString();
+            //    GameReturn2.GetComponent<Text>().text = Lang["label_return"].ToString();
+            //    GameReturn3.GetComponent<Text>().text = Lang["label_return"].ToString();
+            //    GameReturn4.GetComponent<Text>().text = Lang["label_return"].ToString();
+            //    GameReturn5.GetComponent<Text>().text = Lang["label_return"].ToString();
+
+            RecorTitle.GetComponent<Text>().text = Lang["label_record"].ToString();
+
+            BookRecordName1.GetComponent<Text>().text = Lang["label_record_book_1"].ToString();
+            BookRecordName2.GetComponent<Text>().text = Lang["label_record_book_2"].ToString();
+            BookRecordName3.GetComponent<Text>().text = Lang["label_record_book_3"].ToString();
+            BookRecordName4.GetComponent<Text>().text = Lang["label_record_book_4"].ToString();
+            BookRecordName5.GetComponent<Text>().text = Lang["label_record_book_5"].ToString();
+
+            //    TextFeeding.GetComponent<Text>().text = Lang["label_feeding"].ToString();
+
+            //    TextFOX.GetComponent<Text>().text = Lang["label_fox"].ToString();
+            //    TextBEAR.GetComponent<Text>().text = Lang["label_bear"].ToString();
+            //    TextWOLF.GetComponent<Text>().text = Lang["label_wolf"].ToString();
+            //    TextRABBIT.GetComponent<Text>().text = Lang["label_rabbit"].ToString();
+
+
+            //    TextD.GetComponent<Text>().text = Lang["label_D"].ToString();
+            //    TextC.GetComponent<Text>().text = Lang["label_C"].ToString();
+            //    TextH.GetComponent<Text>().text = Lang["label_H"].ToString();
+            //    TextG.GetComponent<Text>().text = Lang["label_G"].ToString();
+            //    TextS.GetComponent<Text>().text = Lang["label_S"].ToString();
+            //    TextR.GetComponent<Text>().text = Lang["label_R"].ToString();
+
+            //ElephantPaintOk.GetComponent<Text>().text = Lang["label_ok"].ToString();
+            //    FoxPaintOk.GetComponent<Text>().text = Lang["label_ok"].ToString();
 
 
             //}
