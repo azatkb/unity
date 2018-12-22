@@ -23,7 +23,7 @@ namespace Assets.scripts
 
             this.voiceObject = GameObject.FindGameObjectWithTag("Voice");
             this.appObject = GameObject.FindGameObjectWithTag("App");
-            //this.recordManager = GameObject.FindGameObjectWithTag("recordManager");
+            this.recordManager = GameObject.FindGameObjectWithTag("recordManager");
 
         }
 
@@ -105,6 +105,7 @@ namespace Assets.scripts
 
             //if (!isRecording){
                 isRecording = true;
+            Debug.Log(recordManager);
                 recordManager.GetComponent<ReplayCam>().StartRecording(name);
             //}
   

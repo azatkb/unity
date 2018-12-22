@@ -167,15 +167,16 @@ public class BookReading : MonoBehaviour {
 
         });
 
-        //CloseButton.onClick.AddListener(() => {
+        CloseButton.onClick.AddListener(() =>
+        {
 
-        //    Assets.scripts.ColibriGame.Instance.ForseStopRecording();
+            Assets.scripts.ColibriGame.Instance.ForseStopRecording();
 
-        //    Page = 0;
+            Page = 0;
 
-        //    gameObject.SetActive(false);
+            gameObject.SetActive(false);
 
-        //});
+        });
 
     }
 

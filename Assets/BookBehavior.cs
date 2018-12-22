@@ -47,25 +47,27 @@ public class BookBehavior : MonoBehaviour {
 
         });
 
-        //RecorButton.onClick.AddListener(() => {
+        RecorButton.onClick.AddListener(() =>
+        {
 
-        //    string language = PlayerPrefs.GetString("Language");
+            string language = PlayerPrefs.GetString("Language");
 
-        //    if (language.Length == 0) {
-        //        language = "En";
-        //    }
+            if (language.Length == 0)
+            {
+                language = "En";
+            }
 
-        //    Assets.scripts.ColibriGame.Instance.StartRecording("ElephantBook" + language);
+            Assets.scripts.ColibriGame.Instance.StartRecording("ElephantBook" + language);
 
-        //    Book.gameObject.SetActive(true);
+            Book.gameObject.SetActive(true);
 
-        //    Book.GetComponent<BookReading>().StartReading();
+            Book.GetComponent<BookReading>().StartReading();
 
-        //    gameObject.SetActive(false);
+            gameObject.SetActive(false);
 
-        //    Assets.scripts.ColibriGame.Instance.Mute();
+            Assets.scripts.ColibriGame.Instance.Mute();
 
-        //});
+        });
 
         BookName = gameObject.GetComponent<AudioSource>();
 

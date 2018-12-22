@@ -21,6 +21,7 @@ namespace NatCorderU.Examples {
         public bool recordMicrophone;
         public AudioSource microphoneSource;
         public GameObject canvas;
+        public Camera cemera;
 
         private CameraRecorder videoRecorder;
         private AudioRecorder audioRecorder;
@@ -32,7 +33,7 @@ namespace NatCorderU.Examples {
             BookName = bookName;
 
             canvas.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
-        
+
             recordMicrophone &= container == Container.MP4;
       
             var width = 720;
