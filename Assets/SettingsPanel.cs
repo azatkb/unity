@@ -79,22 +79,6 @@ public class SettingsPanel : MonoBehaviour {
             });
         }
 
-        //if (CancelButton.GetComponent<Button>() != null)
-        //{
-        //    CancelButton.GetComponent<Button>().onClick.AddListener(() =>
-        //    {
-        //        this.Panel.SetActive(false);
-        //    });
-        //}
-
-        //if (CancelButton.GetComponent<Button>() != null)
-        //{
-        //    CancelButton.GetComponent<Button>().onClick.AddListener(() =>
-        //    {
-        //        this.Panel.SetActive(false);
-        //    });
-        //}
-
         if (OKButton.GetComponent<Button>() != null)
         {
             OKButton.GetComponent<Button>().onClick.AddListener(() =>
