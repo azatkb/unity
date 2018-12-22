@@ -9,6 +9,8 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using UnityEngine;
+
 
 namespace LitJson {
 
@@ -222,17 +224,18 @@ public class JsonReader {
 	}
 
 	private void ProcessNumber(string number) {
-		if (number.IndexOf('.') != -1 ||
+            if (number.IndexOf('.') != -1 ||
 			number.IndexOf('e') != -1 ||
 			number.IndexOf('E') != -1) {
 
-			double real;
-			if (double.TryParse (number, out real)) {
+			   double real;
+		    	if (double.TryParse (number, System.Globalization.NumberStyles.Any ,System.Globalization.CultureInfo.InvariantCulture, out real)) {
 				Token = JsonToken.Real;
 				Value = real;
 				return;
-			}
-		}
+			   }
+          
+            }
 		long natural;
 		if (long.TryParse (number, out natural)) {
 			Token = JsonToken.Natural;
@@ -256,8 +259,8 @@ public class JsonReader {
 		Token = JsonToken.Natural;
 		Value = 0;
 
-		throw new JsonException(string.Format("Failed to parse number '{0}'", number));
-	}
+            throw new JsonException(string.Format("Failed to parse number '{0}'", number));
+        }
 
 	private void ProcessSymbol() {
 		if (currentSymbol == '[')  {

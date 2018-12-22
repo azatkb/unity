@@ -12,9 +12,9 @@ public class CanvasBehavior : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-        //can1.SetActive(false);
-        //can2.SetActive(false);
-        //can3.SetActive(false);
+        can1.SetActive(false);
+        can2.SetActive(false);
+        can3.SetActive(false);
 
         Application.runInBackground = true;
 

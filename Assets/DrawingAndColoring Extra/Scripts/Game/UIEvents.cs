@@ -209,6 +209,7 @@ namespace IndieStudio.DrawingAndColoring.Logic
 		public void ChangeCursorToCurrentSprite ()
 		{
 			GameManager gameManager = GameObject.FindObjectOfType<GameManager> ();
+            Debug.Log("Event");
 			if (gameManager != null)
 				gameManager.ChangeCursorToCurrentSprite ();
 		}

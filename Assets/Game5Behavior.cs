@@ -6,15 +6,12 @@ using System.Collections.Generic;
 public class Game5Behavior : MonoBehaviour {
  
     public Button CloseElephant;
-    public Button CloseFox;
     public GameObject SuccessPanel;
     public GameObject ElephantGame;
     public GameObject MianScreen;
     public GameObject ProfileScreen;
-    public Text GameTitle;
     public GameObject Game1;
     public GameObject Canvas;
-
     public GameObject can1;
     public GameObject can2;
     public GameObject can3;
@@ -23,43 +20,42 @@ public class Game5Behavior : MonoBehaviour {
 
         gameObject.SetActive(false);
 
-        //CloseElephant.onClick.AddListener(() =>
-        //{
+        CloseElephant.onClick.AddListener(() =>
+        {
 
-        //    StartCoroutine(Timeout());
+            StartCoroutine(Timeout());
 
-        //    Disable();
+            Disable();
 
-        //    SuccessPanel.GetComponent<ElephantSuccess>().Success();
+            SuccessPanel.GetComponent<ElephantSuccess>().Success();
 
 
-        //    string Id = PlayerPrefs.GetString("CurrentUser");
+            string Id = PlayerPrefs.GetString("CurrentUser");
 
-        //    if (Id.Length == 0)
-        //    {
+            if (Id.Length == 0)
+            {
 
-        //        int level = PlayerPrefs.GetInt("Level");
+                int level = PlayerPrefs.GetInt("Level");
 
-        //        if (level < 1)
-        //        {
+                if (level < 1)
+                {
 
-        //            PlayerPrefs.SetInt("Level", 1);
+                    PlayerPrefs.SetInt("Level", 1);
 
-        //            PlayerPrefs.Save();
+                    PlayerPrefs.Save();
 
-        //        }
+                }
 
-        //    }
-        //    else
-        //    {
+            }
+            else
+            {
 
-        //        ProfileScreen.GetComponent<ProfilePanel>().SetLevel(Id, 1);
+                ProfileScreen.GetComponent<ProfilePanel>().SetLevel(Id, 1);
 
-        //    }
+            }
 
-        //});
+        });
 
-        //Close.gameObject.SetActive(false);
 
     }
 
@@ -91,9 +87,7 @@ public class Game5Behavior : MonoBehaviour {
 
         yield return new WaitForSeconds(0f);
 
-        CloseElephant.gameObject.SetActive(true);
-
-        CloseFox.gameObject.SetActive(false);
+        Canvas.SetActive(true);
 
         can1.SetActive(true);
 
@@ -101,7 +95,7 @@ public class Game5Behavior : MonoBehaviour {
 
         can3.SetActive(true);
 
-        can3.GetComponent<IndieStudio.DrawingAndColoring.Logic.ShapesCanvas>().InitElephant();
+        can1.GetComponent<IndieStudio.DrawingAndColoring.Logic.GameManager>().LoadInimal();
 
         Canvas.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
 
@@ -116,7 +110,7 @@ public class Game5Behavior : MonoBehaviour {
 
         can3.SetActive(false);
 
-        can3.GetComponent<IndieStudio.DrawingAndColoring.Logic.ShapesCanvas>().CleanShapes();
+        can1.GetComponent<IndieStudio.DrawingAndColoring.Logic.GameManager>().LoadInimal();
 
         Canvas.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
 

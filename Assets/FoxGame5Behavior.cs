@@ -98,7 +98,7 @@ public class FoxGame5Behavior : MonoBehaviour {
 
         can3.SetActive(true);
 
-        can3.GetComponent<IndieStudio.DrawingAndColoring.Logic.ShapesCanvas>().InitFox();
+        //can3.GetComponent<IndieStudio.DrawingAndColoring.Logic.ShapesCanvas>().InitFox();
 
     }
 
@@ -113,7 +113,7 @@ public class FoxGame5Behavior : MonoBehaviour {
 
         Canvas.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
 
-        can3.GetComponent<IndieStudio.DrawingAndColoring.Logic.ShapesCanvas>().CleanShapes();
+        //can3.GetComponent<IndieStudio.DrawingAndColoring.Logic.ShapesCanvas>().CleanShapes();
 
 
     }

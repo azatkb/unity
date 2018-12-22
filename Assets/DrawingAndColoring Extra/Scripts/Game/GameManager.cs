@@ -869,10 +869,35 @@ namespace IndieStudio.DrawingAndColoring.Logic
 			Area.shapesDrawingContents [ShapesManager.instance.lastSelectedShape].GetComponent<History> ().CheckUnDoRedoButtonsStatus ();
 		}
 
-		/// <summary>
-		/// Go to the Next shape.
+        /// <summary>
+		/// Load the current shape.
 		/// </summary>
-		public void NextShape(){
+		public void LoadInimal(int i = 4)
+        {
+
+            ShapesManager.instance.lastSelectedShape = 4;
+
+            if (ShapesManager.instance.shapes == null)
+            {
+                return;
+            }
+
+            if (!(ShapesManager.instance.lastSelectedShape >= 0 && ShapesManager.instance.lastSelectedShape < ShapesManager.instance.shapes.Count))
+            {
+                return;
+            }
+
+            SetShapeOrder();
+            SetShapeOrderColor();
+            ShapesManager.instance.shapes[ShapesManager.instance.lastSelectedShape].gamePrefab.SetActive(true);
+            Area.shapesDrawingContents[ShapesManager.instance.lastSelectedShape].gameObject.SetActive(true);
+            Area.shapesDrawingContents[ShapesManager.instance.lastSelectedShape].GetComponent<History>().CheckUnDoRedoButtonsStatus();
+        }
+
+        /// <summary>
+        /// Go to the Next shape.
+        /// </summary>
+        public void NextShape(){
 
 			if (ShapesManager.instance.shapes == null) {
 				return;

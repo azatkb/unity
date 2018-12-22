@@ -42,7 +42,7 @@ namespace IndieStudio.DrawingAndColoring.Logic
 
 		void Start ()
 		{
-			//cursor = GameObject.Find ("Cursor").transform;
+			cursor = GameObject.Find ("Cursor").transform;
 			middleCam = GameObject.Find ("MiddleCamera").GetComponent<Camera> ();
 			mainCam = GameObject.Find ("MainCamera").GetComponent<Camera> ();
 		}
@@ -51,17 +51,17 @@ namespace IndieStudio.DrawingAndColoring.Logic
 		void Update ()
 		{
 			//set up the new postion
-			//newPosition.x = cursor.transform.position.x * middleCam.orthographicSize / mainCam.orthographicSize;
-			//newPosition.x += middleCam.transform.position.x;
-			//newPosition.y = cursor.transform.position.y * middleCam.orthographicSize / mainCam.orthographicSize;
-			//newPosition.y += middleCam.transform.position.y;
+			newPosition.x = cursor.transform.position.x * middleCam.orthographicSize / mainCam.orthographicSize;
+			newPosition.x += middleCam.transform.position.x;
+			newPosition.y = cursor.transform.position.y * middleCam.orthographicSize / mainCam.orthographicSize;
+			newPosition.y += middleCam.transform.position.y;
 
-			//tempVector = transform.position;
-			//tempVector.x = GetValue (transform.position.x, newPosition.x);
-			//tempVector.y = GetValue (transform.position.y, newPosition.y);
+			tempVector = transform.position;
+			tempVector.x = GetValue (transform.position.x, newPosition.x);
+			tempVector.y = GetValue (transform.position.y, newPosition.y);
 
-			////apply new postion
-			//transform.position = tempVector;
+			//apply new postion
+			transform.position = tempVector;
 		}
 
 		private float GetValue (float currentValue, float targetValue)

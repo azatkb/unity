@@ -15,21 +15,21 @@ namespace IndieStudio.DrawingAndColoring.Logic
 			// Use this for initialization
 			void Start ()
 			{
-					ShowAd ();
+					//ShowAd ();
 			}
 
 			public void ShowAd ()
 			{
-					if (SceneManager.GetActiveScene().name == "Album") {
-						AdsManager.instance.ShowAdvertisment (AdPackage.AdEvent.Event.ON_LOAD_ALBUM_SCENE);
-					} else if (SceneManager.GetActiveScene().name == "Game") {
-						AdsManager.instance.ShowAdvertisment (AdPackage.AdEvent.Event.ON_LOAD_GAME_SCENE);
-					} 
+					//if (SceneManager.GetActiveScene().name == "Album") {
+					//	AdsManager.instance.ShowAdvertisment (AdPackage.AdEvent.Event.ON_LOAD_ALBUM_SCENE);
+					//} else if (SceneManager.GetActiveScene().name == "Game") {
+					//	AdsManager.instance.ShowAdvertisment (AdPackage.AdEvent.Event.ON_LOAD_GAME_SCENE);
+					//} 
 			}
 			
 			void OnDestroy ()
 			{
-					AdsManager.instance.HideAdvertisment ();
+					//AdsManager.instance.HideAdvertisment ();
 			}
 	}
 }

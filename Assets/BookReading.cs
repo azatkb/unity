@@ -207,6 +207,7 @@ public class BookReading : MonoBehaviour {
 
             PagesCount = (BookData.Count - 1);
 
+
         }
 
         InitPage();
@@ -254,10 +255,13 @@ public class BookReading : MonoBehaviour {
         }
 
         PageWords = new Dictionary<string, int>();
+
         Words = new List<string>();
 
         currentWordSecond = 0;
+
         InitPageWords();
+
         InitVoice();
 
         InvokeRepeating("RunWords", 0, 0.1f);

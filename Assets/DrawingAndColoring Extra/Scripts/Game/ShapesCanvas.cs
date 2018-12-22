@@ -52,9 +52,9 @@ namespace IndieStudio.DrawingAndColoring.Logic
 		/// Set the shape order reference.
 		/// </summary>
 		private static void SetShapeOrderReference(){
-			//if(shapeOrder == null){
-			//	shapeOrder = GameObject.Find("ShapeOrder").GetComponent<Text>();
-			//}
+			if(shapeOrder == null){
+				//shapeOrder = GameObject.Find("ShapeOrder").GetComponent<Text>();
+			}
 		}
 
 		/// <summary>
@@ -62,84 +62,86 @@ namespace IndieStudio.DrawingAndColoring.Logic
 		/// </summary>
 		public void InstantiateShapes(){
 			
-		
-        }
+			if (shapesContainer == null) {
+				Debug.LogError("Shapes Container is undefined");
+				return;
+			}
+
+			if (ShapesManager.instance.shapes.Count == 0) {
+				Debug.LogWarning("No Shapes Found in the list");
+			}
+
+			//Destroy all shapes in the shapesContainer
+			foreach (Transform child in shapesContainer) {
+				Destroy(child.gameObject);
+			}
+			
+			RectTransform rectTransform;
+			
+			for (int i = 0 ; i < ShapesManager.instance.shapes.Count ;i++){
+				if(ShapesManager.instance.shapes[i] == null){
+					continue;
+				}
+				GameObject shape = Instantiate (ShapesManager.instance.shapes[i].gamePrefab, Vector3.zero, Quaternion.identity) as GameObject;
+				shape.name  = ShapesManager.instance.shapes[i].gamePrefab.name;//set the name of the shape
+				if (shape.name == "FreeArea") {//Hide Free Area image
+					shape.GetComponent<Image> ().enabled = false;
+				}
+				shape.transform.SetParent (shapesContainer);//set the parent of the shape
+				rectTransform = shape.GetComponent<RectTransform>();//get RectTransform component
+				//rectTransform.offsetMax = rectTransform.offsetMin = Vector2.zero;//reset offset
+				rectTransform.anchoredPosition3D = Vector3.zero;//reset anchor position
+				shape.transform.localScale = Vector3.one;//reset the scale to (1,1,1)
+				shape.SetActive (false);//disable the shape
+				ShapesManager.instance.shapes[i].gamePrefab = shape.gameObject;
+			}
+		}
 
         public void InitElephant(){
 
-            RectTransform rectTransform;
-
-            GameObject shape = Instantiate(ShapesManager.instance.shapes[4].gamePrefab, Vector3.zero, Quaternion.identity) as GameObject;
-            shape.name = ShapesManager.instance.shapes[4].gamePrefab.name;
-     
-            shape.transform.SetParent(shapesContainer);
-            rectTransform = shape.GetComponent<RectTransform>();
-                                                                
-            rectTransform.anchoredPosition3D = Vector3.zero;
-            shape.transform.localScale = Vector3.one;
-            shape.SetActive(true);
-            ShapesManager.instance.shapes[4].gamePrefab = shape.gameObject;
-
-        }
-
-        public void InitFox()
-        {
-
-            RectTransform rectTransform;
-
-            GameObject shape = Instantiate(ShapesManager.instance.shapes[5].gamePrefab, Vector3.zero, Quaternion.identity) as GameObject;
-            shape.name = ShapesManager.instance.shapes[5].gamePrefab.name;
-
-            shape.transform.SetParent(shapesContainer);
-            rectTransform = shape.GetComponent<RectTransform>();
-
-            rectTransform.anchoredPosition3D = Vector3.zero;
-            shape.transform.localScale = Vector3.one;
-            shape.SetActive(true);
-            ShapesManager.instance.shapes[5].gamePrefab = shape.gameObject;
-
-        }
-
-        /// <summary>
-		/// Clean the shapes.
-		/// </summary>
-		public void CleanShapes()
-        {
-
-            for (int i = 0; i < ShapesManager.instance.shapes.Count; i++)
+            if (shapesContainer == null)
             {
-                //Clean the history for the current shape
-                Area.shapesDrawingContents[i].GetComponent<History>().CleanPool();
-
-                //Remove all the childern in drawContents
-                foreach (Transform child in Area.shapesDrawingContents[i].transform)
-                {
-                    Destroy(child.gameObject);
-                }
-
-                Transform shapeParts = ShapesManager.instance.shapes[i].gamePrefab.transform.Find("Parts");
-                if (shapeParts != null)
-                {
-                    foreach (Transform part in shapeParts)
-                    {
-                        part.GetComponent<SpriteRenderer>().color = Color.white;
-                        Area.shapesDrawingContents[i].shapePartsColors[part.name] = Color.white;
-                        part.GetComponent<ShapePart>().ApplyInitialSortingOrder();
-                        part.GetComponent<ShapePart>().ApplyInitialColor();
-                        Area.shapesDrawingContents[i].shapePartsSortingOrder[part.name] = part.GetComponent<ShapePart>().initialSortingOrder;
-                    }
-                }
-
-                Area.shapesDrawingContents[i].currentSortingOrder = 0;
-                Area.shapesDrawingContents[i].lastPartSortingOrder = 0;
+                Debug.LogError("Shapes Container is undefined");
+                return;
             }
 
+            if (ShapesManager.instance.shapes.Count == 0)
+            {
+                Debug.LogWarning("No Shapes Found in the list");
+            }
+
+            //Destroy all shapes in the shapesContainer
             foreach (Transform child in shapesContainer)
             {
-                //GameObject.Destroy(child.gameObject);
-
-                child.gameObject.SetActive(false);
+                Destroy(child.gameObject);
             }
+
+            RectTransform rectTransform;
+
+            //for (int i = 0; i < ShapesManager.instance.shapes.Count; i++)
+            //{
+            //    if (ShapesManager.instance.shapes[i] == null)
+            //    {
+            //        continue;
+            //    }
+                GameObject shape = Instantiate(ShapesManager.instance.shapes[4].gamePrefab, Vector3.zero, Quaternion.identity) as GameObject;
+                shape.name = ShapesManager.instance.shapes[4].gamePrefab.name;//set the name of the shape
+                if (shape.name == "FreeArea")
+                {//Hide Free Area image
+                    shape.GetComponent<Image>().enabled = false;
+                }
+                shape.transform.SetParent(shapesContainer);//set the parent of the shape
+                rectTransform = shape.GetComponent<RectTransform>();//get RectTransform component
+                                                                    //rectTransform.offsetMax = rectTransform.offsetMin = Vector2.zero;//reset offset
+                rectTransform.anchoredPosition3D = Vector3.zero;//reset anchor position
+                shape.transform.localScale = Vector3.one;//reset the scale to (1,1,1)
+                shape.SetActive(true);//disable the shape
+                ShapesManager.instance.shapes[4].gamePrefab = shape.gameObject;
+            //}
+
+
+
         }
+
     }
 }
