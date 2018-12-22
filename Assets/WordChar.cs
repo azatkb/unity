@@ -14,13 +14,13 @@ namespace Assets.scripts {
 
         void Start(){
 
-            originalPos = transform.position ;
+          
 
         }
 
         public void OnBeginDrag(PointerEventData eventData)
         {
-          
+            originalPos = transform.position;
         }
 
         public void OnDrag(PointerEventData eventData){
@@ -38,7 +38,7 @@ namespace Assets.scripts {
         }
          
         public void AfterDrop(){
-            Debug.Log(Draggable + "Draggable");
+
             if (Draggable){
                 transform.position = new Vector3(originalPos.x, originalPos.y, originalPos.z);
             }

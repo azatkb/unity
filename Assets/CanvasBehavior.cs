@@ -22,10 +22,10 @@ public class CanvasBehavior : MonoBehaviour {
 
         Transform[] ts = gameObject.GetComponentsInChildren<Transform>();
 
-        foreach (Transform child in transform)
-        {
-            child.position = transform.position;
-        }
+        //foreach (Transform child in transform)
+        //{
+        //    child.position = transform.position;
+        //}
 
     }
 	

@@ -9,7 +9,7 @@ namespace Assets.scripts
         public GameObject game0;
         public GameObject game1;
         public GameObject game2;
-        //public Button ReturnButton;
+        public Button ReturnButton;
         public GameObject SuccessPanel;
 
         public GameObject ApplesPanel;
@@ -20,12 +20,13 @@ namespace Assets.scripts
 
             sm = gameObject.GetComponent<AudioSource>();
 
-            //ReturnButton.onClick.AddListener(() => {
+            ReturnButton.onClick.AddListener(() =>
+            {
 
-            //    game1.SetActive(false);
-            //    game0.SetActive(true);
+                game1.SetActive(false);
+                game0.SetActive(true);
 
-            //});
+            });
 
         }
 
@@ -44,7 +45,7 @@ namespace Assets.scripts
                 Invoke("Timeout", 2f);
             }
             else{
-                //ColibriGame.Instance.Success();
+                ColibriGame.Instance.Success();
             }
 
         }

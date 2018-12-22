@@ -6,7 +6,7 @@ public class GameElephant : MonoBehaviour {
 
 	void Start () {
 
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
 
         foreach (Transform child in transform)
         {
