@@ -125,7 +125,6 @@ public class BookRecords : MonoBehaviour {
             RecordRow5.SetActive(true);
         }
 
-        Debug.Log(DogBook);
 
 
     }

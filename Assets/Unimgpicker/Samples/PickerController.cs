@@ -16,6 +16,8 @@ namespace Kakera
 
         void Start(){
 
+            Debug.Log(gameObject.name);
+
             gameObject.GetComponent<Button>().onClick.AddListener(()=> {
 
                 OnPressShowPicker();
@@ -26,18 +28,24 @@ namespace Kakera
 
         void Awake()
         {
-            imagePicker.Completed += (string path) =>
-            {
-                //Debug.Log(path);
-                StartCoroutine(LoadImage(path));
-            };
 
-            imagePicker.Failed += (string messages) => {
+            if (imagePicker != null){
 
-                Debug.LogError(messages);
-            
-            };
+                imagePicker.Completed += (string path) =>
+                {
+                    //Debug.Log(path);
+                    StartCoroutine(LoadImage(path));
+                };
+
+                imagePicker.Failed += (string messages) => {
+
+                    Debug.LogError(messages);
+
+                };
+            }
+
         }
+
 
         public void OnPressShowPicker()
         {
