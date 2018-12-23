@@ -503,9 +503,9 @@ public class Translations : MonoBehaviour {
             //    BookAuthor5.GetComponent<Text>().text = Lang["label_book_author5"].ToString();
 
             //    GameReturn1.GetComponent<Text>().text = Lang["label_return"].ToString();
-            //    GameReturn2.GetComponent<Text>().text = Lang["label_return"].ToString();
-            //    GameReturn3.GetComponent<Text>().text = Lang["label_return"].ToString();
-            //    GameReturn4.GetComponent<Text>().text = Lang["label_return"].ToString();
+            GameReturn2.GetComponent<Text>().text = Lang["label_return2"].ToString();
+            GameReturn3.GetComponent<Text>().text = Lang["label_return2"].ToString();
+            GameReturn4.GetComponent<Text>().text = Lang["label_return2"].ToString();
             //    GameReturn5.GetComponent<Text>().text = Lang["label_return"].ToString();
 
             RecorTitle.GetComponent<Text>().text = Lang["label_record"].ToString();

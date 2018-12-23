@@ -18,14 +18,14 @@ public class CanvasBehavior : MonoBehaviour {
 
         Application.runInBackground = true;
 
-        gameObject.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
+        //gameObject.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
 
         Transform[] ts = gameObject.GetComponentsInChildren<Transform>();
 
-        //foreach (Transform child in transform)
-        //{
-        //    child.position = transform.position;
-        //}
+        foreach (Transform child in transform)
+        {
+            child.position = transform.position;
+        }
 
     }
 	

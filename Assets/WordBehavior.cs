@@ -13,7 +13,7 @@ public class WordBehavior : MonoBehaviour {
 
     public GameObject CharsPanel;
 
-    public 
+    public int successCount;
 
     void Start () {
 
@@ -33,7 +33,8 @@ public class WordBehavior : MonoBehaviour {
 
         SuccesCount++;
        
-        if(SuccesCount == 6){
+        if(SuccesCount == successCount)
+        {
 
             SuccessPanel.GetComponent<ElephantSuccess>().Success();
 
