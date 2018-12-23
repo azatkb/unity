@@ -208,9 +208,9 @@ public class MainScreen : MonoBehaviour {
 
     public void OpenFeeding(int level = 0){
 
-        //Feeding.SetActive(true);
+        Feeding.SetActive(true);
 
-        //FeedingMouth.GetComponent<OwlMouth>().Init(level);
+        FeedingMouth.GetComponent<OwlMouth>().Init(level);
 
     }
 }

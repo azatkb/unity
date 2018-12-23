@@ -516,7 +516,7 @@ public class Translations : MonoBehaviour {
             BookRecordName4.GetComponent<Text>().text = Lang["label_record_book_4"].ToString();
             BookRecordName5.GetComponent<Text>().text = Lang["label_record_book_5"].ToString();
 
-            //    TextFeeding.GetComponent<Text>().text = Lang["label_feeding"].ToString();
+            TextFeeding.GetComponent<Text>().text = Lang["label_feeding"].ToString();
 
             //    TextFOX.GetComponent<Text>().text = Lang["label_fox"].ToString();
             //    TextBEAR.GetComponent<Text>().text = Lang["label_bear"].ToString();
