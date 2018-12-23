@@ -365,19 +365,19 @@ public class Translations : MonoBehaviour {
             OkText.GetComponent<Text>().text = Lang["label_ok"].ToString();
 
 
-            //TitleProfile.GetComponent<Text>().text = Lang["title_profile"].ToString();
-            //    NameText.GetComponent<Text>().text = Lang["label_name"].ToString();
-            //    LavelText.GetComponent<Text>().text = Lang["label_level"].ToString();
+            TitleProfile.GetComponent<Text>().text = Lang["title_profile"].ToString();
+            NameText.GetComponent<Text>().text = Lang["label_name"].ToString();
+            LavelText.GetComponent<Text>().text = Lang["label_level"].ToString();
 
-            //    DeletePhotoText.GetComponent<Text>().text = Lang["label_delete_photo"].ToString();
-            //    CurrentNameText.GetComponent<Text>().text = Lang["label_name"].ToString();
-            //    CurrentLavelText.GetComponent<Text>().text = Lang["label_level"].ToString();
-            //    AddNewPlayerText.GetComponent<Text>().text = Lang["label_add_player"].ToString();
-            //    ProfileOkText.GetComponent<Text>().text = Lang["label_ok"].ToString();
-            //    ProfileCancelText.GetComponent<Text>().text = Lang["label_cancel"].ToString();
-            //    AddPhotoText.GetComponent<Text>().text = Lang["label_add_photo"].ToString();
-            //    ProfileAddText.GetComponent<Text>().text = Lang["label_add_player"].ToString();
-            //    ProfileNewUserText.GetComponent<Text>().text = Lang["label_name"].ToString();
+            DeletePhotoText.GetComponent<Text>().text = Lang["label_delete_photo"].ToString();
+            CurrentNameText.GetComponent<Text>().text = Lang["label_name"].ToString();
+            CurrentLavelText.GetComponent<Text>().text = Lang["label_level"].ToString();
+            AddNewPlayerText.GetComponent<Text>().text = Lang["label_add_player"].ToString();
+            ProfileOkText.GetComponent<Text>().text = Lang["label_ok"].ToString();
+            ProfileCancelText.GetComponent<Text>().text = Lang["label_cancel"].ToString();
+            AddPhotoText.GetComponent<Text>().text = Lang["label_add_photo"].ToString();
+            ProfileAddText.GetComponent<Text>().text = Lang["label_add_player"].ToString();
+            ProfileNewUserText.GetComponent<Text>().text = Lang["label_name"].ToString();
 
             ExitText.GetComponent<Text>().text = Lang["title_exit"].ToString();
             YesText.GetComponent<Text>().text = Lang["label_yes"].ToString();
