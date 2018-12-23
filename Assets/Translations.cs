@@ -224,6 +224,10 @@ public class Translations : MonoBehaviour {
     public Text GameReturn4;
     public Text GameReturn5;
 
+    public Text FoxGameReturn2;
+    public Text FoxGameReturn3;
+    public Text FoxGameReturn4;
+
 
     /// <summary>
     ///  Elephant Games 
@@ -237,6 +241,7 @@ public class Translations : MonoBehaviour {
     public GameObject ElephantGame3Tj;
 
     public GameObject FoxGame1En;
+    public GameObject FoxGame1Tj;
 
     /// <summary>
     /// /  Records 
@@ -250,7 +255,7 @@ public class Translations : MonoBehaviour {
     public Text BookRecordName4;
     public Text BookRecordName5;
     public Text TextFeeding;
-    public GameObject FoxGame1Tj;
+
 
     public Text TextFOX;
     public Text TextBEAR;
@@ -317,8 +322,8 @@ public class Translations : MonoBehaviour {
             ElephantGame1Tj.SetActive(false);
             //ElephantGame3En.SetActive(true);
             //ElephantGame3Tj.SetActive(false);
-            //FoxGame1En.SetActive(true);
-            //FoxGame1Tj.SetActive(false);
+            FoxGame1En.SetActive(true);
+            FoxGame1Tj.SetActive(false);
             //BearGame3En.SetActive(true);
             //BearGame3Tj.SetActive(false);
             //LadyGame3En.SetActive(true);
@@ -333,8 +338,8 @@ public class Translations : MonoBehaviour {
             ElephantGame1Tj.SetActive(true);
             //ElephantGame3En.SetActive(false);
             //ElephantGame3Tj.SetActive(true);
-            //FoxGame1En.SetActive(false);
-            //FoxGame1Tj.SetActive(true);
+            FoxGame1En.SetActive(false);
+            FoxGame1Tj.SetActive(true);
             //BearGame3En.SetActive(false);
             //BearGame3Tj.SetActive(true);
             //LadyGame3En.SetActive(false);
@@ -417,10 +422,10 @@ public class Translations : MonoBehaviour {
             //ElephantGame5Title.GetComponent<Text>().text = Lang["label_prepare_draw_elephant"].ToString();
 
 
-            //    FoxGame1Title.GetComponent<Text>().text = Lang["label_find_animal_name"].ToString();
-            //    FoxGame2Title.GetComponent<Text>().text = Lang["label_erase_animal_not_story"].ToString();
-            //    FoxGame3Title.GetComponent<Text>().text = Lang["label_name_animal"].ToString();
-            //    FoxGame4Title.GetComponent<Text>().text = Lang["label_collect_puzzle_2"].ToString();
+            FoxGame1Title.GetComponent<Text>().text = Lang["label_find_animal_name"].ToString();
+            FoxGame2Title.GetComponent<Text>().text = Lang["label_erase_animal_not_story"].ToString();
+            FoxGame3Title.GetComponent<Text>().text = Lang["label_name_animal"].ToString();
+            FoxGame4Title.GetComponent<Text>().text = Lang["label_collect_puzzle_2"].ToString();
             //    //FoxGame5Title.GetComponent<Text>().text = Lang["label_learn_draw_rabbit"].ToString();
             //    //FoxGame5Desc.GetComponent<Text>().text = Lang["label_prepare_draw_rabbit"].ToString();
 
@@ -474,9 +479,9 @@ public class Translations : MonoBehaviour {
                  Book1PreviewTitle.GetComponent<Text>().text = Lang["label_the_elephant"].ToString();
                  Game1PreviewTitle.GetComponent<Text>().text = Lang["label_the_elephant"].ToString();
 
-            //    Book2Title.GetComponent<Text>().text = Lang["label_the_fox"].ToString();
-            Book2PreviewTitle.GetComponent<Text>().text = Lang["label_the_fox"].ToString();
-            //    Game2PreviewTitle.GetComponent<Text>().text = Lang["label_the_fox"].ToString();
+                 Book2Title.GetComponent<Text>().text = Lang["label_the_fox"].ToString();
+                 Book2PreviewTitle.GetComponent<Text>().text = Lang["label_the_fox"].ToString();
+                 Game2PreviewTitle.GetComponent<Text>().text = Lang["label_the_fox"].ToString();
 
             //    Book3Title.GetComponent<Text>().text = Lang["label_the_bear"].ToString();
             //    Book3PreviewTitle.GetComponent<Text>().text = Lang["label_the_bear"].ToString();
@@ -503,9 +508,12 @@ public class Translations : MonoBehaviour {
             //    BookAuthor5.GetComponent<Text>().text = Lang["label_book_author5"].ToString();
 
             //    GameReturn1.GetComponent<Text>().text = Lang["label_return"].ToString();
-            GameReturn2.GetComponent<Text>().text = Lang["label_return2"].ToString();
+                 GameReturn2.GetComponent<Text>().text = Lang["label_return2"].ToString();
                  GameReturn3.GetComponent<Text>().text = Lang["label_return2"].ToString();
                  GameReturn4.GetComponent<Text>().text = Lang["label_return2"].ToString();
+                 FoxGameReturn2.GetComponent<Text>().text = Lang["label_return2"].ToString();
+                 FoxGameReturn3.GetComponent<Text>().text = Lang["label_return2"].ToString();
+                 FoxGameReturn4.GetComponent<Text>().text = Lang["label_return2"].ToString();
             //    GameReturn5.GetComponent<Text>().text = Lang["label_return"].ToString();
 
             RecorTitle.GetComponent<Text>().text = Lang["label_record"].ToString();
@@ -518,10 +526,10 @@ public class Translations : MonoBehaviour {
 
             TextFeeding.GetComponent<Text>().text = Lang["label_feeding"].ToString();
 
-            //    TextFOX.GetComponent<Text>().text = Lang["label_fox"].ToString();
-            //    TextBEAR.GetComponent<Text>().text = Lang["label_bear"].ToString();
-            //    TextWOLF.GetComponent<Text>().text = Lang["label_wolf"].ToString();
-            //    TextRABBIT.GetComponent<Text>().text = Lang["label_rabbit"].ToString();
+            TextFOX.GetComponent<Text>().text = Lang["label_fox"].ToString();
+            TextBEAR.GetComponent<Text>().text = Lang["label_bear"].ToString();
+            TextWOLF.GetComponent<Text>().text = Lang["label_wolf"].ToString();
+            TextRABBIT.GetComponent<Text>().text = Lang["label_rabbit"].ToString();
 
 
             //    TextD.GetComponent<Text>().text = Lang["label_D"].ToString();
@@ -532,7 +540,7 @@ public class Translations : MonoBehaviour {
             //    TextR.GetComponent<Text>().text = Lang["label_R"].ToString();
 
             ElephantPaintOk.GetComponent<Text>().text = Lang["label_ok"].ToString();
-            //    FoxPaintOk.GetComponent<Text>().text = Lang["label_ok"].ToString();
+            FoxPaintOk.GetComponent<Text>().text = Lang["label_ok"].ToString();
 
 
             //}
