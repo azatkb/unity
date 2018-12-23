@@ -106,6 +106,7 @@
     "label_book_author5": "Гулсара Авазова",
 
     "label_return":"Бозгашт",
+    "label_return2":"Бозгашт",
 	"label_match_sount": "Гӯш кунед ва калимаро дуруст кунед",
 
     "label_record":"Сабтҳо",

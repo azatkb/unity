@@ -34,7 +34,7 @@ public class AnimalPanelBehavior : MonoBehaviour {
 
          SuccessCount++;
 
-         //ColibriGame.Instance.GreateJob();
+        ColibriGame.Instance.GreateJob();
 
         if (SuccessCount == 2){
 

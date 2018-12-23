@@ -18,9 +18,13 @@ public class FoxGame5Behavior : MonoBehaviour {
 
     public Button CloseFox;
 
+    public GameObject CloseElephant;
+
     void Start () {
 
         gameObject.SetActive(false);
+
+        CloseElephant.SetActive(false);
 
         CloseFox.onClick.AddListener(() =>
         {
@@ -33,13 +37,15 @@ public class FoxGame5Behavior : MonoBehaviour {
 
             string Id = PlayerPrefs.GetString("CurrentUser");
 
-            if (Id.Length == 0){
+            if (Id.Length == 0)
+            {
 
                 int level = PlayerPrefs.GetInt("Level");
 
                 Debug.Log(level);
 
-                if (level < 2){
+                if (level < 2)
+                {
 
                     PlayerPrefs.SetInt("Level", 2);
 
@@ -48,7 +54,8 @@ public class FoxGame5Behavior : MonoBehaviour {
                 }
 
             }
-            else{
+            else
+            {
 
                 ProfileScreen.GetComponent<ProfilePanel>().SetLevel(Id, 2);
 
@@ -98,7 +105,7 @@ public class FoxGame5Behavior : MonoBehaviour {
 
         can3.SetActive(true);
 
-        //can3.GetComponent<IndieStudio.DrawingAndColoring.Logic.ShapesCanvas>().InitFox();
+        can1.GetComponent<IndieStudio.DrawingAndColoring.Logic.GameManager>().LoadInimal(5);
 
     }
 

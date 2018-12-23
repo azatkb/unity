@@ -6,6 +6,7 @@ using System.Collections.Generic;
 public class Game5Behavior : MonoBehaviour {
  
     public Button CloseElephant;
+    public GameObject CloseFox;
     public GameObject SuccessPanel;
     public GameObject ElephantGame;
     public GameObject MianScreen;
@@ -19,6 +20,8 @@ public class Game5Behavior : MonoBehaviour {
     void Start () {
 
         gameObject.SetActive(false);
+
+        CloseFox.SetActive(false);
 
         CloseElephant.onClick.AddListener(() =>
         {
@@ -85,7 +88,9 @@ public class Game5Behavior : MonoBehaviour {
 
     IEnumerator InitDrawble(){
 
-        yield return new WaitForSeconds(0f);
+        yield return new WaitForSeconds(1f);
+
+        CloseElephant.gameObject.SetActive(true);
 
         Canvas.SetActive(true);
 
@@ -109,8 +114,6 @@ public class Game5Behavior : MonoBehaviour {
         can2.SetActive(false);
 
         can3.SetActive(false);
-
-        can1.GetComponent<IndieStudio.DrawingAndColoring.Logic.GameManager>().LoadInimal();
 
         Canvas.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
 

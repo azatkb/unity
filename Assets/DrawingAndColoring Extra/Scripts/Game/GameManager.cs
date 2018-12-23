@@ -875,7 +875,7 @@ namespace IndieStudio.DrawingAndColoring.Logic
 		public void LoadInimal(int i = 4)
         {
 
-            ShapesManager.instance.lastSelectedShape = 4;
+            ShapesManager.instance.lastSelectedShape = i;
 
             if (ShapesManager.instance.shapes == null)
             {
