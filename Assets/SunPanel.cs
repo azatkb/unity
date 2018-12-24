@@ -24,13 +24,14 @@ public class SunPanel: MonoBehaviour {
 
     void Start () {
 
-        //ReturnButton.onClick.AddListener(() => {
+        ReturnButton.onClick.AddListener(() =>
+        {
 
-        //    game0.SetActive(true);
+            game0.SetActive(true);
 
-        //    game1.SetActive(false);
+            game1.SetActive(false);
 
-        //});
+        });
 
     }
 

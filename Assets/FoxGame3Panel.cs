@@ -11,7 +11,7 @@ namespace Assets.scripts
         public GameObject game1;
         public GameObject game2;
 
-        //public Button ReturnBtn;
+        public Button ReturnBtn;
 
         public GameObject SuccessPanel;
 
@@ -21,14 +21,15 @@ namespace Assets.scripts
 
         void Start()
         {
-            //ReturnBtn.onClick.AddListener(() => {
+            ReturnBtn.onClick.AddListener(() =>
+            {
 
-            //    game0.SetActive(true);
+                game0.SetActive(true);
 
-            //    game1.SetActive(false);
+                game1.SetActive(false);
 
 
-            //});
+            });
 
         }
 

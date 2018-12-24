@@ -21,16 +21,15 @@ public class HouseContainer : MonoBehaviour {
 
     void Start(){
 
-        game1.SetActive(false);
-
         sm = gameObject.GetComponent<AudioSource>();
 
-        //ReturnBautton.onClick.AddListener(() => {
+        ReturnBautton.onClick.AddListener(() =>
+        {
 
-        //    game1.gameObject.SetActive(false);
-        //    game0.gameObject.SetActive(true);
+            game1.gameObject.SetActive(false);
+            game0.gameObject.SetActive(true);
 
-        //});
+        });
 
     }
 

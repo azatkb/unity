@@ -22,13 +22,14 @@ public class OrzuiCharsWrapper : MonoBehaviour {
 
     void Start () {
 
-        //ReturnButton.onClick.AddListener(() => {
+        ReturnButton.onClick.AddListener(() =>
+        {
 
-        //    game1.SetActive(false);
+            game1.SetActive(false);
 
-        //    game0.SetActive(true);
+            game0.SetActive(true);
 
-        //});
+        });
 
     }
 

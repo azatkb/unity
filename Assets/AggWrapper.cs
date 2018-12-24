@@ -16,7 +16,7 @@ public class AggWrapper : MonoBehaviour {
 
     public GameObject GameScreen;
 
-    //public Button ReturnButton;
+    public Button ReturnButton;
 
     public GameObject ProfileScreen;
 
@@ -39,13 +39,14 @@ public class AggWrapper : MonoBehaviour {
 
     void Start () {
 
-        //ReturnButton.onClick.AddListener(() => {
+        ReturnButton.onClick.AddListener(() =>
+        {
 
-        //    game0.SetActive(true);
+            game0.SetActive(true);
 
-        //    game1.SetActive(false);
+            game1.SetActive(false);
 
-        //});
+        });
 
         game1.SetActive(false);
 

@@ -58,7 +58,7 @@ public class ZamGame5 : MonoBehaviour {
     IEnumerator Timeout()
     {
 
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(3.5f);
 
         game0.SetActive(true);
 

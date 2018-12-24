@@ -14,7 +14,7 @@ namespace Assets.scripts
 
         public GameObject Puzzles;
 
-        //public Button ReturnBtn;
+        public Button ReturnBtn;
 
         public GameObject SuccessPanel;
 
@@ -27,12 +27,13 @@ namespace Assets.scripts
 
             Sm = gameObject.GetComponent<AudioSource>();
 
-            //ReturnBtn.onClick.AddListener(() => {
+            ReturnBtn.onClick.AddListener(() =>
+            {
 
-            //    game0.SetActive(true);
-            //    game1.SetActive(false);
+                game0.SetActive(true);
+                game1.SetActive(false);
 
-            //});
+            });
 
         }
 

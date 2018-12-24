@@ -9,7 +9,7 @@ public class ZamCharWrapperConteianer : MonoBehaviour {
     public GameObject game1;
     public GameObject game2;
 
-    //public Button ReturnBautton;
+    public Button ReturnButton;
 
     public GameObject SuccesPanel;
 
@@ -21,9 +21,15 @@ public class ZamCharWrapperConteianer : MonoBehaviour {
 
 	void Start () {
 
-        game1.SetActive(false);
-
         music = gameObject.GetComponent<AudioSource>();
+
+        ReturnButton.onClick.AddListener(() =>
+        {
+
+            game0.SetActive(true);
+            game1.SetActive(false);
+
+        });
 
     }
 
