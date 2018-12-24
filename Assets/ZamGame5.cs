@@ -12,13 +12,43 @@ public class ZamGame5 : MonoBehaviour {
     public GameObject game1;
     public GameObject game2;
 
-    public Button OkButton;
+    public Button UnswerButton;
+    public Button UnswerButton2;
+    public Button UnswerButton3;
+    public Button UnswerButton4;
+
+    public Button ReturnBtn;
 
     void Start () {
 
         gameObject.SetActive(false);
 
-        OkButton.onClick.AddListener(() => {
+        ReturnBtn.onClick.AddListener(() => {
+
+            game0.SetActive(true);
+            game1.SetActive(false);
+
+        });
+
+        UnswerButton2.onClick.AddListener(() => {
+
+           Assets.scripts.ColibriGame.Instance.Error();
+
+        });
+
+        UnswerButton3.onClick.AddListener(() => {
+
+            Assets.scripts.ColibriGame.Instance.Error();
+
+        });
+
+        UnswerButton4.onClick.AddListener(() => {
+
+            Assets.scripts.ColibriGame.Instance.Error();
+
+        });
+
+        UnswerButton.onClick.AddListener(() => {
 
             StartCoroutine(Timeout());
 

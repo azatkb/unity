@@ -21,7 +21,7 @@ namespace Assets.scripts
 
             if (gameObject.tag == other.gameObject.tag){
 
-                panel.gameObject.GetComponent<ZamGame3Panel>().Success();
+                panel.gameObject.GetComponent<FoxGame3Panel>().Success();
 
                 other.GetComponent<FoxGame3Word>().Draggable = false;
 
