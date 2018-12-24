@@ -320,8 +320,8 @@ public class Translations : MonoBehaviour {
         if (language == "En") {
             ElephantGame1En.SetActive(true);
             ElephantGame1Tj.SetActive(false);
-            //ElephantGame3En.SetActive(true);
-            //ElephantGame3Tj.SetActive(false);
+            ElephantGame3En.SetActive(true);
+            ElephantGame3Tj.SetActive(false);
             FoxGame1En.SetActive(true);
             FoxGame1Tj.SetActive(false);
             //BearGame3En.SetActive(true);
@@ -336,8 +336,8 @@ public class Translations : MonoBehaviour {
         else{
             ElephantGame1En.SetActive(false);
             ElephantGame1Tj.SetActive(true);
-            //ElephantGame3En.SetActive(false);
-            //ElephantGame3Tj.SetActive(true);
+            ElephantGame3En.SetActive(false);
+            ElephantGame3Tj.SetActive(true);
             FoxGame1En.SetActive(false);
             FoxGame1Tj.SetActive(true);
             //BearGame3En.SetActive(false);
