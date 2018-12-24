@@ -21,6 +21,8 @@ public class ZamCharWrapperConteianer : MonoBehaviour {
 
 	void Start () {
 
+        game1.SetActive(false);
+
         music = gameObject.GetComponent<AudioSource>();
 
     }

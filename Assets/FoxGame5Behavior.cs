@@ -42,7 +42,6 @@ public class FoxGame5Behavior : MonoBehaviour {
 
                 int level = PlayerPrefs.GetInt("Level");
 
-                Debug.Log(level);
 
                 if (level < 2)
                 {

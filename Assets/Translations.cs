@@ -228,6 +228,11 @@ public class Translations : MonoBehaviour {
     public Text FoxGameReturn3;
     public Text FoxGameReturn4;
 
+    public Text BearGameReturn2;
+    public Text BearGameReturn3;
+    public Text BearGameReturn4;
+    public Text BearGameOk;
+
 
     /// <summary>
     ///  Elephant Games 
@@ -324,8 +329,8 @@ public class Translations : MonoBehaviour {
             ElephantGame3Tj.SetActive(false);
             FoxGame1En.SetActive(true);
             FoxGame1Tj.SetActive(false);
-            //BearGame3En.SetActive(true);
-            //BearGame3Tj.SetActive(false);
+            BearGame3En.SetActive(true);
+            BearGame3Tj.SetActive(false);
             //LadyGame3En.SetActive(true);
             //LadyGame3Tj.SetActive(false);
 
@@ -340,8 +345,8 @@ public class Translations : MonoBehaviour {
             ElephantGame3Tj.SetActive(true);
             FoxGame1En.SetActive(false);
             FoxGame1Tj.SetActive(true);
-            //BearGame3En.SetActive(false);
-            //BearGame3Tj.SetActive(true);
+            BearGame3En.SetActive(false);
+            BearGame3Tj.SetActive(true);
             //LadyGame3En.SetActive(false);
             //LadyGame3Tj.SetActive(true);
 
@@ -404,9 +409,9 @@ public class Translations : MonoBehaviour {
 
 
             FoxReadBook.GetComponent<Text>().text = Lang["label_read_book"].ToString();
- 
 
-            //    BearReadBook.GetComponent<Text>().text = Lang["label_read_book"].ToString();
+
+            BearReadBook.GetComponent<Text>().text = Lang["label_read_book"].ToString();
             //    //BearColseBook.GetComponent<Text>().text= Lang["label_return"].ToString();
 
             //    DogReadBook.GetComponent<Text>().text = Lang["label_read_book"].ToString();
@@ -429,16 +434,16 @@ public class Translations : MonoBehaviour {
             //    //FoxGame5Title.GetComponent<Text>().text = Lang["label_learn_draw_rabbit"].ToString();
             //    //FoxGame5Desc.GetComponent<Text>().text = Lang["label_prepare_draw_rabbit"].ToString();
 
-            //    BearGame1Title.GetComponent<Text>().text = Lang["label_help_collect_mushrooms"].ToString();
-            //    BearGame2Title.GetComponent<Text>().text = Lang["label_match_names_children"].ToString();
-            //    BearGame3Title.GetComponent<Text>().text = Lang["label_match_sount"].ToString();
-            //    BearGame4Title.GetComponent<Text>().text = Lang["label_build_house_children"].ToString();
-            //    BearGame5Title.GetComponent<Text>().text = Lang["label_repeat_after_me"].ToString();
+            BearGame1Title.GetComponent<Text>().text = Lang["label_help_collect_mushrooms"].ToString();
+            BearGame2Title.GetComponent<Text>().text = Lang["label_match_names_children"].ToString();
+            BearGame3Title.GetComponent<Text>().text = Lang["label_match_sount"].ToString();
+            BearGame4Title.GetComponent<Text>().text = Lang["label_build_house_children"].ToString();
+    
 
-            //    //BearGame5Task1.GetComponent<Text>().text = Lang["label_one_elephant"].ToString();
-            //    //BearGame5Task2.GetComponent<Text>().text = Lang["label_two_rabbits"].ToString();
-            //    //BearGame5Task3.GetComponent<Text>().text = Lang["label_three_apples"].ToString();
-            //    //BearGame5Task4.GetComponent<Text>().text = Lang["label_four_flowers"].ToString();
+            BearGame5Task1.GetComponent<Text>().text = Lang["label_one_elephant"].ToString();
+            BearGame5Task2.GetComponent<Text>().text = Lang["label_two_rabbits"].ToString();
+            BearGame5Task3.GetComponent<Text>().text = Lang["label_three_apples"].ToString();
+            BearGame5Task4.GetComponent<Text>().text = Lang["label_four_flowers"].ToString();
 
             //    DogGame1Title.GetComponent<Text>().text = Lang["label_help_puppy_clean"].ToString();
             //    DogGame2Title.GetComponent<Text>().text = Lang["label_animals_names_letters"].ToString();
@@ -483,9 +488,9 @@ public class Translations : MonoBehaviour {
                  Book2PreviewTitle.GetComponent<Text>().text = Lang["label_the_fox"].ToString();
                  Game2PreviewTitle.GetComponent<Text>().text = Lang["label_the_fox"].ToString();
 
-            //    Book3Title.GetComponent<Text>().text = Lang["label_the_bear"].ToString();
-            //    Book3PreviewTitle.GetComponent<Text>().text = Lang["label_the_bear"].ToString();
-            //    Game3PreviewTitle.GetComponent<Text>().text = Lang["label_the_bear"].ToString();
+                  Book3Title.GetComponent<Text>().text = Lang["label_the_bear"].ToString();
+                  Book3PreviewTitle.GetComponent<Text>().text = Lang["label_the_bear"].ToString();
+            Game3PreviewTitle.GetComponent<Text>().text = Lang["label_the_bear"].ToString();
 
             //    Book4Title.GetComponent<Text>().text = Lang["label_the_dog"].ToString();
             //    Book4PreviewTitle.GetComponent<Text>().text = Lang["label_the_dog"].ToString();
@@ -496,14 +501,14 @@ public class Translations : MonoBehaviour {
             //    Game5PreviewTitle.GetComponent<Text>().text = Lang["label_the_ladybug"].ToString();
 
             RecordText1.GetComponent<Text>().text = Lang["label_the_record"].ToString();
-            RecordText2.GetComponent<Text>().text = Lang["label_the_record"].ToString();
-            //RecordText3.GetComponent<Text>().text = Lang["label_the_record"].ToString();
+                  RecordText2.GetComponent<Text>().text = Lang["label_the_record"].ToString();
+            RecordText3.GetComponent<Text>().text = Lang["label_the_record"].ToString();
             //RecordText4.GetComponent<Text>().text = Lang["label_the_record"].ToString();
             //RecordText5.GetComponent<Text>().text = Lang["label_the_record"].ToString();
 
             BookAuthor1.GetComponent<Text>().text = Lang["label_book_author1"].ToString();
             BookAuthor2.GetComponent<Text>().text = Lang["label_book_author2"].ToString();
-            //    BookAuthor3.GetComponent<Text>().text = Lang["label_book_author3"].ToString();
+            BookAuthor3.GetComponent<Text>().text = Lang["label_book_author3"].ToString();
             //    BookAuthor4.GetComponent<Text>().text = Lang["label_book_author4"].ToString();
             //    BookAuthor5.GetComponent<Text>().text = Lang["label_book_author5"].ToString();
 
@@ -514,6 +519,11 @@ public class Translations : MonoBehaviour {
                  FoxGameReturn2.GetComponent<Text>().text = Lang["label_return2"].ToString();
                  FoxGameReturn3.GetComponent<Text>().text = Lang["label_return2"].ToString();
                  FoxGameReturn4.GetComponent<Text>().text = Lang["label_return2"].ToString();
+                 BearGameReturn2.GetComponent<Text>().text = Lang["label_return2"].ToString();
+                 BearGameReturn3.GetComponent<Text>().text = Lang["label_return2"].ToString();
+                 BearGameReturn4.GetComponent<Text>().text = Lang["label_return2"].ToString();
+
+                 BearGameOk.GetComponent<Text>().text = Lang["label_ok"].ToString();
             //    GameReturn5.GetComponent<Text>().text = Lang["label_return"].ToString();
 
             RecorTitle.GetComponent<Text>().text = Lang["label_record"].ToString();

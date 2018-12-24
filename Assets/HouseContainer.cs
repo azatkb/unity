@@ -21,6 +21,8 @@ public class HouseContainer : MonoBehaviour {
 
     void Start(){
 
+        game1.SetActive(false);
+
         sm = gameObject.GetComponent<AudioSource>();
 
         //ReturnBautton.onClick.AddListener(() => {
