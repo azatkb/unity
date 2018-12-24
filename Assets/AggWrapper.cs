@@ -47,6 +47,8 @@ public class AggWrapper : MonoBehaviour {
 
         //});
 
+        game1.SetActive(false);
+
     }
 
     public void Success(){

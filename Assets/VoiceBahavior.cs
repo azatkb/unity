@@ -88,7 +88,7 @@ public class VoiceBahavior : MonoBehaviour {
         successText1.text = clipsTexts[(int)index];
         successText2.text = clipsTexts[(int)index];
         successText3.text = clipsTexts[(int)index];
-        //successText4.text = clipsTexts[(int)index];
+        successText4.text = clipsTexts[(int)index];
         //successText5.text = clipsTexts[(int)index];
 
         if (source.isPlaying){
@@ -119,7 +119,7 @@ public class VoiceBahavior : MonoBehaviour {
         successText1.text = clipsTexts[(int)index];
         successText2.text = clipsTexts[(int)index];
         successText3.text = clipsTexts[(int)index];
-        //successText4.text = clipsTexts[(int)index];
+        successText4.text = clipsTexts[(int)index];
         //successText5.text = clipsTexts[(int)index];
 
         source.PlayOneShot(clips[(int)index]);
@@ -141,7 +141,7 @@ public class VoiceBahavior : MonoBehaviour {
         successText1.text = clipsTexts[(int)index];
         successText2.text = clipsTexts[(int)index];
         successText3.text = clipsTexts[(int)index];
-        //successText4.text = clipsTexts[(int)index];
+        successText4.text = clipsTexts[(int)index];
         //successText5.text = clipsTexts[(int)index];
 
         source.PlayOneShot(clips[(int)index]);
