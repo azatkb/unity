@@ -95,9 +95,6 @@ public class OwlMouth : MonoBehaviour {
         level = (int)currentLevel;
 
 
-        Debug.Log(currentLevel);
-
-
         if (currentLevel == 1)
         {
             Fake.sprite = Level1Sprite;

@@ -43,7 +43,7 @@ public class ZamGame5 : MonoBehaviour {
             else
             {
 
-                ProfileScreen.GetComponent<ProfilePanel>().SetLevel(Id, 2);
+                ProfileScreen.GetComponent<ProfilePanel>().SetLevel(Id, 3);
 
             }
 
