@@ -27,41 +27,46 @@ public class ThreeePanel : MonoBehaviour {
     void Start()
     {
 
-        //ReturnButton.onClick.AddListener(() => {
+        ReturnButton.onClick.AddListener(() =>
+        {
 
-        //    game0.SetActive(true);
+            game0.SetActive(true);
 
-        //    game1.SetActive(false);
+            game1.SetActive(false);
 
-        //});
+        });
 
-        //UnswerButton.onClick.AddListener(() => {
+        UnswerButton.onClick.AddListener(() =>
+        {
 
-        //    ColibriGame.Instance.Error();
+            ColibriGame.Instance.Error();
 
-        //});
+        });
 
-        //UnswerButton2.onClick.AddListener(() => {
+        UnswerButton2.onClick.AddListener(() =>
+        {
 
-        //    ColibriGame.Instance.Error();
+            ColibriGame.Instance.Error();
 
-        //});
+        });
 
-        //UnswerButton3.onClick.AddListener(() => {
+        UnswerButton3.onClick.AddListener(() =>
+        {
 
-        //    Invoke("Timeout", 2f);
+            Invoke("Timeout", 2f);
 
-        //    SuccessPanel.GetComponent<OftobakSuccess>().Success();
+            SuccessPanel.GetComponent<OftobakSuccess>().Success();
 
-        //    ColibriGame.Instance.GreateJob();
+            ColibriGame.Instance.GreateJob();
 
-        //});
+        });
 
-        //UnswerButton4.onClick.AddListener(() => {
+        UnswerButton4.onClick.AddListener(() =>
+        {
 
-        //    ColibriGame.Instance.Error();
+            ColibriGame.Instance.Error();
 
-        //}); 
+        });
 
     }
 

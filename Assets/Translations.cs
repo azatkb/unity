@@ -335,8 +335,8 @@ public class Translations : MonoBehaviour {
             FoxGame1Tj.SetActive(false);
             BearGame3En.SetActive(true);
             BearGame3Tj.SetActive(false);
-            //LadyGame3En.SetActive(true);
-            //LadyGame3Tj.SetActive(false);
+            LadyGame3En.SetActive(true);
+            LadyGame3Tj.SetActive(false);
 
             VoiceBehavior.GetComponent<VoiceBahavior>().TranslateEn();
             SoonImage.sprite = SoonSpriteEn1;
@@ -351,8 +351,8 @@ public class Translations : MonoBehaviour {
             FoxGame1Tj.SetActive(true);
             BearGame3En.SetActive(false);
             BearGame3Tj.SetActive(true);
-            //LadyGame3En.SetActive(false);
-            //LadyGame3Tj.SetActive(true);
+            LadyGame3En.SetActive(false);
+            LadyGame3Tj.SetActive(true);
 
             VoiceBehavior.GetComponent<VoiceBahavior>().TranslateTj();
 
