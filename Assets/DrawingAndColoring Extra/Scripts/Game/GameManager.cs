@@ -875,6 +875,12 @@ namespace IndieStudio.DrawingAndColoring.Logic
 		public void LoadInimal(int i = 4)
         {
 
+            ShapesManager.instance.shapes[4].gamePrefab.SetActive(false);
+            Area.shapesDrawingContents[4].gameObject.SetActive(false);
+
+            ShapesManager.instance.shapes[5].gamePrefab.SetActive(false);
+            Area.shapesDrawingContents[5].gameObject.SetActive(false);
+
             ShapesManager.instance.lastSelectedShape = i;
 
             if (ShapesManager.instance.shapes == null)

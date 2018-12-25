@@ -27,17 +27,19 @@ public class ExitPanel : MonoBehaviour
 
         });
 
-        //CancelButton.onClick.AddListener(() => {
+        CancelButton.onClick.AddListener(() =>
+        {
 
-        //    this.Panel.SetActive(false);
+            this.Panel.SetActive(false);
 
-        //});
+        });
 
-        //OkButton.onClick.AddListener(() => {
+        OkButton.onClick.AddListener(() =>
+        {
 
-        //    Application.Quit();
+            Application.Quit();
 
-        //});
+        });
 
     }
 

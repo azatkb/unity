@@ -109,6 +109,8 @@ public class Game5Behavior : MonoBehaviour {
 
     public void Disable(){
 
+        can1.GetComponent<IndieStudio.DrawingAndColoring.Logic.GameManager>().CleanCurrentShapeScreen();
+
         can1.SetActive(false);
 
         can2.SetActive(false);

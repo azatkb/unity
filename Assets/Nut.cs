@@ -10,13 +10,13 @@ public class Nut : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandl
 
     void Start() {
 
-        originalPos = transform.position;
+        
 
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-
+        originalPos = transform.position;
     }
 
     public void OnDrag(PointerEventData eventData){

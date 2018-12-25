@@ -8,7 +8,7 @@ public class OftobekGameBehavior : MonoBehaviour {
         gameObject.SetActive(false);
         foreach (Transform child in transform){
             if (child.gameObject.tag != "title"){
-                child.position = transform.position;
+                //child.position = transform.position;
             }
         }
     }

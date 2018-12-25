@@ -12,7 +12,7 @@ public class GameElephant : MonoBehaviour {
         {
             if (child.gameObject.tag != "title")
             {
-                child.position = transform.position;
+                //child.position = transform.position;
             }
         }
 

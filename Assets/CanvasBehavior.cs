@@ -24,7 +24,7 @@ public class CanvasBehavior : MonoBehaviour {
 
         foreach (Transform child in transform)
         {
-            child.position = transform.position;
+            //child.position = transform.position;
         }
 
     }

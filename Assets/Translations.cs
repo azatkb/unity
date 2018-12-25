@@ -396,7 +396,7 @@ public class Translations : MonoBehaviour {
             ProfileCancelText.GetComponent<Text>().text = Lang["label_cancel"].ToString();
             AddPhotoText.GetComponent<Text>().text = Lang["label_add_photo"].ToString();
             ProfileAddText.GetComponent<Text>().text = Lang["label_add_player"].ToString();
-            ProfileNewUserText.GetComponent<Text>().text = Lang["label_name"].ToString();
+            ProfileNewUserText.GetComponent<Text>().text = Lang["label_add_player"].ToString();
 
             ExitText.GetComponent<Text>().text = Lang["title_exit"].ToString();
             YesText.GetComponent<Text>().text = Lang["label_yes"].ToString();
