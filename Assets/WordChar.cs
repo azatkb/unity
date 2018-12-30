@@ -20,10 +20,6 @@ namespace Assets.scripts {
 
         void SetPosition(){
 
-            Debug.Log(originalPos.x);
-            Debug.Log(originalPos.y);
-            Debug.Log(originalPos.z);
-
             originalPos = transform.position;
 
         }

@@ -64,6 +64,7 @@ namespace Assets.scripts
             }
 
             WordConrinerPanel.GetComponent<Image>().sprite = NormalImage;
+
             WordConrinerPanel2.GetComponent<Image>().sprite = NormalImage;
 
         }

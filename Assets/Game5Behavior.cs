@@ -6,7 +6,7 @@ using System.Collections.Generic;
 public class Game5Behavior : MonoBehaviour {
  
     public Button CloseElephant;
-    public GameObject CloseFox;
+    public Button CloseFox;
     public GameObject SuccessPanel;
     public GameObject ElephantGame;
     public GameObject MianScreen;
@@ -20,8 +20,6 @@ public class Game5Behavior : MonoBehaviour {
     void Start () {
 
         gameObject.SetActive(false);
-
-        CloseFox.SetActive(false);
 
         CloseElephant.onClick.AddListener(() =>
         {
@@ -89,6 +87,8 @@ public class Game5Behavior : MonoBehaviour {
     IEnumerator InitDrawble(){
 
         yield return new WaitForSeconds(1f);
+
+        CloseFox.gameObject.SetActive(false);
 
         CloseElephant.gameObject.SetActive(true);
 

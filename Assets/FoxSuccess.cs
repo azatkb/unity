@@ -20,7 +20,10 @@ public class FoxSuccess : MonoBehaviour {
 
         ColibriGame.Instance.Ewesome();
 
-        StartCoroutine(Timeout());
+        if(gameObject.activeSelf){
+
+            StartCoroutine(Timeout());
+        }
 
     }
 

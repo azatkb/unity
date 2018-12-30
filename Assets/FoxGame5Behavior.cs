@@ -33,8 +33,6 @@ public class FoxGame5Behavior : MonoBehaviour {
 
             SuccessPanel.GetComponent<FoxSuccess>().Success();
 
-            StartCoroutine(Timeout());
-
             string Id = PlayerPrefs.GetString("CurrentUser");
 
             if (Id.Length == 0)
@@ -57,6 +55,12 @@ public class FoxGame5Behavior : MonoBehaviour {
             {
 
                 ProfileScreen.GetComponent<ProfilePanel>().SetLevel(Id, 2);
+
+            }
+
+            if(gameObject.activeSelf){
+
+                StartCoroutine(Timeout());
 
             }
 

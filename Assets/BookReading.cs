@@ -156,6 +156,8 @@ public class BookReading : MonoBehaviour {
 
         PlayButton.GetComponent<Button>().onClick.AddListener(() => {
 
+            CancelInvoke();
+
             Assets.scripts.ColibriGame.Instance.StopRecording();
 
             Page = 0;
