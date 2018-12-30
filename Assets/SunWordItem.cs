@@ -11,6 +11,7 @@ namespace Assets.scripts
 
         public Sprite SuccesImage;
         public Sprite ErrorImage;
+        public Sprite NormalImage;
 
         void Start()
         {
@@ -42,7 +43,14 @@ namespace Assets.scripts
 
         }
 
-    
+        public void Reset()
+        {
+
+            gameObject.GetComponent<Image>().sprite = NormalImage;
+
+        }
+
     }
+
 }
 

@@ -74,6 +74,11 @@ public class SunPanel: MonoBehaviour {
 
         }
 
+        foreach (Transform child in transform)
+        {
+            child.GetComponent<SunWordItem>().Reset();
+        }
+
     }
 
 }

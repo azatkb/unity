@@ -331,41 +331,20 @@ public class Translations : MonoBehaviour {
         }
 
 
-        if (language == "En") {
-            ElephantGame1En.SetActive(true);
-            ElephantGame1Tj.SetActive(false);
-            ElephantGame3En.SetActive(true);
-            ElephantGame3Tj.SetActive(false);
-            FoxGame1En.SetActive(true);
-            FoxGame1Tj.SetActive(false);
-            BearGame3En.SetActive(true);
-            BearGame3Tj.SetActive(false);
-            LadyGame3En.SetActive(true);
-            LadyGame3Tj.SetActive(false);
-
+        if (language == "En")
+        {
             VoiceBehavior.GetComponent<VoiceBahavior>().TranslateEn();
             SoonImage.sprite = SoonSpriteEn1;
             SoonImage2.sprite = SoonSpriteEn2;
         }
-        else{
-            ElephantGame1En.SetActive(false);
-            ElephantGame1Tj.SetActive(true);
-            ElephantGame3En.SetActive(false);
-            ElephantGame3Tj.SetActive(true);
-            FoxGame1En.SetActive(false);
-            FoxGame1Tj.SetActive(true);
-            BearGame3En.SetActive(false);
-            BearGame3Tj.SetActive(true);
-            LadyGame3En.SetActive(false);
-            LadyGame3Tj.SetActive(true);
+        else
+        {
 
             VoiceBehavior.GetComponent<VoiceBahavior>().TranslateTj();
-
             SoonImage.sprite = SoonSpriteTj1;
             SoonImage2.sprite = SoonSpriteTj2;
 
         }
-
 
         using (StreamReader sr = new StreamReader(new MemoryStream(translate.bytes))) {
 
@@ -577,12 +556,49 @@ public class Translations : MonoBehaviour {
             //    Debug.Log("Translate Error");
             //}
 
-
+            Invoke("SetPosition", 3);
 
         }
 
 
+    }
+
+    void SetPosition()
+    {
+
+        string language = PlayerPrefs.GetString("Language");
+
+        if (language == "En")
+        {
+            ElephantGame1En.SetActive(true);
+            ElephantGame1Tj.SetActive(false);
+            ElephantGame3En.SetActive(true);
+            ElephantGame3Tj.SetActive(false);
+            FoxGame1En.SetActive(true);
+            FoxGame1Tj.SetActive(false);
+            BearGame3En.SetActive(true);
+            BearGame3Tj.SetActive(false);
+            LadyGame3En.SetActive(true);
+            LadyGame3Tj.SetActive(false);
+
+        }
+        else
+        {
+            ElephantGame1En.SetActive(false);
+            ElephantGame1Tj.SetActive(true);
+            ElephantGame3En.SetActive(false);
+            ElephantGame3Tj.SetActive(true);
+            FoxGame1En.SetActive(false);
+            FoxGame1Tj.SetActive(true);
+            BearGame3En.SetActive(false);
+            BearGame3Tj.SetActive(true);
+            LadyGame3En.SetActive(false);
+            LadyGame3Tj.SetActive(true);
+
+            VoiceBehavior.GetComponent<VoiceBahavior>().TranslateTj();
+
+        }
 
     }
-     
+
 }

@@ -19,9 +19,7 @@ public class ExitPanel : MonoBehaviour
 
         Panel.SetActive(false);
 
-        Button btn = CloseButton.GetComponent<Button>();
-
-        btn.onClick.AddListener(() => {
+        CloseButton.onClick.AddListener(() => {
 
             this.Panel.SetActive(false);
 

@@ -17,6 +17,13 @@ namespace Assets.scripts
 
         public GameObject CharsPanel;
 
+        public Sprite NormalImage;
+
+        public GameObject WordConrinerPanel;
+        public GameObject WordConrinerPanel2;
+        public GameObject WordConrinerPanel3;
+        public GameObject WordConrinerPanel4;
+
         int SuccessCount;
 
         void Start()
@@ -56,6 +63,7 @@ namespace Assets.scripts
         {
 
             game1.SetActive(false);
+
             game2.SetActive(true);
 
             SuccessCount = 0;
@@ -69,6 +77,11 @@ namespace Assets.scripts
                 }
 
             }
+
+            WordConrinerPanel.GetComponent<Image>().sprite = NormalImage;
+            WordConrinerPanel2.GetComponent<Image>().sprite = NormalImage;
+            WordConrinerPanel3.GetComponent<Image>().sprite = NormalImage;
+            WordConrinerPanel4.GetComponent<Image>().sprite = NormalImage;
 
         }
 

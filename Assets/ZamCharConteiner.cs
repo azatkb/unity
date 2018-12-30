@@ -14,6 +14,8 @@ public class ZamCharConteiner : MonoBehaviour
 
     public Sprite ErrorImage;
 
+    public Sprite NormalImage;
+
     void Start(){
 
     }
@@ -41,6 +43,12 @@ public class ZamCharConteiner : MonoBehaviour
             ColibriGame.Instance.Error();
 
         }
+
+    }
+
+    public void Reset(){
+
+        gameObject.GetComponent<Image>().sprite = NormalImage;
 
     }
 }

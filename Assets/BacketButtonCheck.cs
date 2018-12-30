@@ -8,12 +8,14 @@ public class BacketButtonCheck : MonoBehaviour {
 
     public Sprite SuccessImage;
     public Sprite ErrorImage;
+    public Sprite NoramalImage;
 
     public GameObject game0;
     public GameObject game1;
     public GameObject game2;
     public Button ReturnButton;
     public GameObject SuccessPanel;
+    public GameObject Panel;
 
     public int Numb;
 
@@ -50,7 +52,14 @@ public class BacketButtonCheck : MonoBehaviour {
     void Timeout(){
 
         game1.SetActive(false);
+
         game2.SetActive(true);
+
+        foreach (Transform child in Panel.transform)
+        {
+            child.GetComponent<Image>().sprite = NoramalImage;
+        }
+
         game2.GetComponent<Game5Behavior>().Init();
 
 

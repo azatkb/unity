@@ -14,13 +14,24 @@ namespace Assets.scripts {
 
         void Start(){
 
-          
+            Invoke("SetPosition", 3);
+
+        }
+
+        void SetPosition(){
+
+            Debug.Log(originalPos.x);
+            Debug.Log(originalPos.y);
+            Debug.Log(originalPos.z);
+
+            originalPos = transform.position;
 
         }
 
         public void OnBeginDrag(PointerEventData eventData)
         {
-            originalPos = transform.position;
+            
+       
         }
 
         public void OnDrag(PointerEventData eventData){
@@ -45,6 +56,8 @@ namespace Assets.scripts {
         }
 
         public void Reset(){
+
+           
 
             Draggable = true;
 

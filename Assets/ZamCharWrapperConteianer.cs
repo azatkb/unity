@@ -15,6 +15,8 @@ public class ZamCharWrapperConteianer : MonoBehaviour {
 
     public GameObject CharsPanel;
 
+    public GameObject ContainersPanel;
+
     AudioSource music;
 
     int SuccessCount = 0;
@@ -63,6 +65,16 @@ public class ZamCharWrapperConteianer : MonoBehaviour {
             foreach (Transform child in CharsPanel.transform)
             {
                 child.GetComponent<Assets.scripts.ZamGame3Char>().Reset();
+            }
+
+        }
+
+        if (ContainersPanel != null)
+        {
+
+            foreach (Transform child in ContainersPanel.transform)
+            {
+                child.GetComponent<ZamCharConteiner>().Reset();
             }
 
         }

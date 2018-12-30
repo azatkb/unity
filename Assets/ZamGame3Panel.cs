@@ -10,12 +10,12 @@ namespace Assets.scripts
         public GameObject game0;
         public GameObject game1;
         public GameObject game2;
-
         public Button ReturnBtn;
-
         public GameObject SuccesPanel;
-
         public GameObject CharsPanel;
+        public Sprite NormalImage;
+        public GameObject WordConrinerPanel;
+        public GameObject WordConrinerPanel2;
 
         int SuccessCount;
 
@@ -62,6 +62,9 @@ namespace Assets.scripts
                 }
 
             }
+
+            WordConrinerPanel.GetComponent<Image>().sprite = NormalImage;
+            WordConrinerPanel2.GetComponent<Image>().sprite = NormalImage;
 
         }
 
