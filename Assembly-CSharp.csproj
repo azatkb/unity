@@ -266,6 +266,7 @@
      <Compile Include="Assets\ZamSuccess.cs" />
      <None Include="Assets\book5\The sun and the beetle.txt" />
      <None Include="Assets\DrawingAndColoring Extra\ReadMe.txt" />
+     <None Include="Assets\book4\dalerjon&apos;s dream.txt" />
      <None Include="Assets\StreamingAssets\build_info.txt" />
      <None Include="Assets\DrawingAndColoring Extra\WebPrint\Javascript.txt" />
      <None Include="Assets\book1\tj\fil.txt" />
@@ -273,10 +274,13 @@
      <None Include="Assets\book2\tj\faradzi.txt" />
      <None Include="Assets\NatCorder\Resources\AspectFitter.shader" />
      <None Include="Assets\translations_tj.txt" />
+     <None Include="Assets\book3\mushrom gatheing.txt" />
      <None Include="Assets\book4\daler.txt" />
      <None Include="Assets\translations_en.txt" />
      <None Include="Assets\book5\tj\oftobak.txt" />
      <None Include="Assets\book3\tj\zamb.txt" />
+     <None Include="Assets\book1\elepant.txt" />
+     <None Include="Assets\book5\the sun and beetle.txt" />
      <None Include="Assets\book3\Mushroom Gathering.txt" />
      <None Include="Assets\book1\Elephant.txt" />
      <None Include="Assets\book2\aziz.txt" />
