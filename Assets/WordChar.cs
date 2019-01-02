@@ -14,7 +14,9 @@ namespace Assets.scripts {
 
         void Start(){
 
-            Invoke("SetPosition", 3);
+            originalPos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+
+            //Invoke("SetPosition", 3);
 
         }
 
