@@ -5,7 +5,7 @@ using System;
 
 namespace Assets.scripts {
 
-    public class WordChar : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler
+    public class FoxWordChar : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler
     {
 
         public bool Draggable = true;
@@ -45,6 +45,7 @@ namespace Assets.scripts {
         public void OnEndDrag(PointerEventData eventData){}
 
         public void OnDrop(PointerEventData eventData) {
+
             Invoke("AfterDrop", 1);
         }
          
@@ -57,9 +58,6 @@ namespace Assets.scripts {
 
         public void Reset(){
 
-
-            Debug.Log(gameObject.name);
-            Debug.Log(transform.position.x);
 
             Draggable = true;
 

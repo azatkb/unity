@@ -5,7 +5,7 @@ using System;
 
 namespace Assets.scripts {
 
-    public class WordChar : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler
+    public class OrzuiWordChar : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler
     {
 
         public bool Draggable = true;

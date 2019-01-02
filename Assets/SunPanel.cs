@@ -69,7 +69,7 @@ public class SunPanel: MonoBehaviour {
 
             foreach (Transform child in CharsPanel.transform)
             {
-                child.GetComponent<Assets.scripts.WordChar>().Reset();
+                child.GetComponent<Assets.scripts.LadyWordChar>().Reset();
             }
 
         }

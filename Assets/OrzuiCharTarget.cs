@@ -20,7 +20,7 @@ public class OrzuiCharTarget : MonoBehaviour {
 
             other.gameObject.transform.position = gameObject.transform.position;
 
-            other.gameObject.GetComponent<WordChar>().Draggable = false;
+            other.gameObject.GetComponent<OrzuiWordChar>().Draggable = false;
 
             panel.GetComponent<OrzuiCharsWrapper>().Success();
 

@@ -115,6 +115,8 @@ public class FoxGame5Behavior : MonoBehaviour {
     public void Disable()
     {
 
+        can1.GetComponent<IndieStudio.DrawingAndColoring.Logic.GameManager>().CleanCurrentShapeScreen();
+
         can1.SetActive(false);
 
         can2.SetActive(false);
@@ -122,8 +124,6 @@ public class FoxGame5Behavior : MonoBehaviour {
         can3.SetActive(false);
 
         Canvas.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
-
-        //can3.GetComponent<IndieStudio.DrawingAndColoring.Logic.ShapesCanvas>().CleanShapes();
 
 
     }

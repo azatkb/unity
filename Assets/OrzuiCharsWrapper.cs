@@ -64,7 +64,7 @@ public class OrzuiCharsWrapper : MonoBehaviour {
 
             foreach (Transform child in CharsPanel.transform)
             {
-                child.GetComponent<WordChar>().Reset();
+                child.GetComponent<OrzuiWordChar>().Reset();
             }
 
         }

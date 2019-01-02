@@ -143,6 +143,7 @@
      <Compile Include="Assets\FoxGame5Behavior.cs" />
      <Compile Include="Assets\FoxSuccess.cs" />
      <Compile Include="Assets\FoxWordBehavior.cs" />
+     <Compile Include="Assets\FoxWordChar.cs" />
      <Compile Include="Assets\FoxWordItem.cs" />
      <Compile Include="Assets\Game1Behavior.cs" />
      <Compile Include="Assets\Game2Behavior.cs" />
@@ -161,6 +162,7 @@
      <Compile Include="Assets\LadybugBookPreviewBehavior.cs" />
      <Compile Include="Assets\LadybugBookReading.cs" />
      <Compile Include="Assets\LadybugHiddenBehavior.cs" />
+     <Compile Include="Assets\LadyWordChar.cs" />
      <Compile Include="Assets\Lastic.cs" />
      <Compile Include="Assets\LasticTarget.cs" />
      <Compile Include="Assets\MainButton.cs" />
@@ -202,6 +204,7 @@
      <Compile Include="Assets\OrzuiGame2.cs" />
      <Compile Include="Assets\OrzuiGame4.cs" />
      <Compile Include="Assets\OrzuiGame5.cs" />
+     <Compile Include="Assets\OrzuiWordChar.cs" />
      <Compile Include="Assets\OwlBehavior.cs" />
      <Compile Include="Assets\OwlMouth.cs" />
      <Compile Include="Assets\ParentsPanel.cs" />

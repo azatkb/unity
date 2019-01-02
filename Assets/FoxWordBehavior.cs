@@ -8,7 +8,6 @@ public class FoxWordBehavior : MonoBehaviour {
     int SuccesCount = 0;
     public GameObject game1;
     public GameObject game2;
-    //public Button ReturnButton;
     public GameObject SuccessPanel;
 
     public GameObject CharsPanel;
@@ -16,12 +15,6 @@ public class FoxWordBehavior : MonoBehaviour {
     public int sCount;
 
     void Start () {
-
-        //ReturnButton.onClick.AddListener(() => {
-
-        //    game1.SetActive(false);
-        
-        //});
 
     }
 	
@@ -57,7 +50,7 @@ public class FoxWordBehavior : MonoBehaviour {
 
             foreach (Transform child in CharsPanel.transform)
             {
-                child.GetComponent<Assets.scripts.WordChar>().Reset();
+                child.GetComponent<Assets.scripts.FoxWordChar>().Reset();
             }
 
         }

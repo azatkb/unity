@@ -5,7 +5,7 @@ using System;
 
 namespace Assets.scripts {
 
-    public class WordChar : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler
+    public class LadyWordChar : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler
     {
 
         public bool Draggable = true;
@@ -56,10 +56,6 @@ namespace Assets.scripts {
         }
 
         public void Reset(){
-
-
-            Debug.Log(gameObject.name);
-            Debug.Log(transform.position.x);
 
             Draggable = true;
 

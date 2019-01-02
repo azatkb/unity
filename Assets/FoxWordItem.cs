@@ -21,7 +21,7 @@ namespace Assets.scripts
 
                 other.gameObject.transform.position = gameObject.transform.position;
 
-                other.gameObject.GetComponent<WordChar>().Draggable = false;
+                other.gameObject.GetComponent<FoxWordChar>().Draggable = false;
 
                 gameObject.transform.parent.gameObject.GetComponent<FoxWordBehavior>().Succes();
 
