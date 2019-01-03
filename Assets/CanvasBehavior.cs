@@ -16,6 +16,11 @@ public class CanvasBehavior : MonoBehaviour {
 
         Application.runInBackground = true;
 
+        foreach (Transform child in transform)
+        {
+            child.position = transform.position;
+        }
+
     }
 
 	void Update () {
