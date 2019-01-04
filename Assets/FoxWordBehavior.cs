@@ -43,6 +43,8 @@ public class FoxWordBehavior : MonoBehaviour {
         game1.SetActive(false);
         game2.SetActive(true);
 
+        Assets.scripts.ColibriGame.Instance.GameVoice(6);
+
         SuccesCount = 0;
 
         if (CharsPanel != null)

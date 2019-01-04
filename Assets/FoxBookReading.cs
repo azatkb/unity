@@ -141,9 +141,13 @@ public class FoxBookReading : MonoBehaviour {
 
         PlayButton.GetComponent<Button>().onClick.AddListener(() => {
 
+            CancelInvoke();
+
             Assets.scripts.ColibriGame.Instance.StopRecording();
 
             Page = 0;
+
+            Assets.scripts.ColibriGame.Instance.GameVoice(5);
 
             Game.gameObject.SetActive(true);
 

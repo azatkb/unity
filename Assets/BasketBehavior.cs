@@ -59,6 +59,8 @@ public class BasketBehavior : MonoBehaviour {
         game1.SetActive(false);
         game2.SetActive(true);
 
+        Assets.scripts.ColibriGame.Instance.GameVoice(10);
+
         SuccessCount = 0;
 
         if (MashroomsPanel != null)

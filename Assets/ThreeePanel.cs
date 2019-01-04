@@ -34,6 +34,8 @@ public class ThreeePanel : MonoBehaviour {
 
             game1.SetActive(false);
 
+            Assets.scripts.ColibriGame.Instance.GameVoice(18);
+
         });
 
         UnswerButton.onClick.AddListener(() =>
@@ -75,6 +77,8 @@ public class ThreeePanel : MonoBehaviour {
 
         game1.SetActive(false);
         game2.SetActive(true);
+
+        Assets.scripts.ColibriGame.Instance.GameVoice(20);
 
     }
 }

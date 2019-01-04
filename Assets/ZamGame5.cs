@@ -27,6 +27,7 @@ public class ZamGame5 : MonoBehaviour {
 
             game0.SetActive(true);
             game1.SetActive(false);
+            Assets.scripts.ColibriGame.Instance.GameVoice(12);
 
         });
 

@@ -25,6 +25,7 @@ public class AnimalPanelBehavior : MonoBehaviour {
                ReturnBtn.onClick.AddListener(() => {
                    game0.SetActive(true);
                    game1.SetActive(false);
+                   Assets.scripts.ColibriGame.Instance.GameVoice(5);
                });
 
           }
@@ -52,6 +53,8 @@ public class AnimalPanelBehavior : MonoBehaviour {
 
         game1.SetActive(false);
         game2.SetActive(true);
+
+        Assets.scripts.ColibriGame.Instance.GameVoice(7);
 
         SuccessCount = 0;
 

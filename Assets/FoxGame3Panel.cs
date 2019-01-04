@@ -68,6 +68,8 @@ namespace Assets.scripts
 
             SuccessCount = 0;
 
+            Assets.scripts.ColibriGame.Instance.GameVoice(8);
+
             if (CharsPanel != null)
             {
 

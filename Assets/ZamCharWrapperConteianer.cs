@@ -30,6 +30,7 @@ public class ZamCharWrapperConteianer : MonoBehaviour {
 
             game0.SetActive(true);
             game1.SetActive(false);
+            Assets.scripts.ColibriGame.Instance.GameVoice(10);
 
         });
 
@@ -56,6 +57,8 @@ public class ZamCharWrapperConteianer : MonoBehaviour {
 
         game1.SetActive(false);
         game2.SetActive(true);
+
+        Assets.scripts.ColibriGame.Instance.GameVoice(12);
 
         SuccessCount = 0;
 

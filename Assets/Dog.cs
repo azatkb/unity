@@ -57,6 +57,8 @@ public class Dog : MonoBehaviour {
         game1.SetActive(false);
         game2.SetActive(true);
 
+        Assets.scripts.ColibriGame.Instance.GameVoice(15);
+
 
     }
 

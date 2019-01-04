@@ -145,6 +145,10 @@ public class LadybugBookReading : MonoBehaviour {
 
             gameObject.SetActive(false);
 
+            Assets.scripts.ColibriGame.Instance.GameVoice(18);
+
+            CancelInvoke();
+
         });
 
         CloseButton.onClick.AddListener(() => {

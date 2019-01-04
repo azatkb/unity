@@ -28,6 +28,7 @@ public class HouseContainer : MonoBehaviour {
 
             game1.gameObject.SetActive(false);
             game0.gameObject.SetActive(true);
+            Assets.scripts.ColibriGame.Instance.GameVoice(11);
 
         });
 
@@ -57,6 +58,8 @@ public class HouseContainer : MonoBehaviour {
 
         game1.SetActive(false);
         game2.SetActive(true);
+
+        Assets.scripts.ColibriGame.Instance.GameVoice(13);
 
         SuccessCount = 0;
 

@@ -29,6 +29,8 @@ public class OrzuiCharsWrapper : MonoBehaviour {
 
             game0.SetActive(true);
 
+            Assets.scripts.ColibriGame.Instance.GameVoice(14);
+
         });
 
     }
@@ -56,6 +58,8 @@ public class OrzuiCharsWrapper : MonoBehaviour {
 
         game1.SetActive(false);
         game2.SetActive(true);
+
+        Assets.scripts.ColibriGame.Instance.GameVoice(16);
 
         SuccessCount = 0;
 

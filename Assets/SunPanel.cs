@@ -31,6 +31,8 @@ public class SunPanel: MonoBehaviour {
 
             game1.SetActive(false);
 
+            Assets.scripts.ColibriGame.Instance.GameVoice(19);
+
         });
 
     }
@@ -55,6 +57,8 @@ public class SunPanel: MonoBehaviour {
     {
 
         SuccessPanel.GetComponent<OftobakSuccess>().Success();
+
+        Assets.scripts.ColibriGame.Instance.GameVoice(21);
 
         ColibriGame.Instance.GreateJob();
 

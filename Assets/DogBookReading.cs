@@ -150,11 +150,15 @@ public class DogBookReading : MonoBehaviour {
 
             Assets.scripts.ColibriGame.Instance.StopRecording();
 
+            Assets.scripts.ColibriGame.Instance.GameVoice(14);
+
             Page = 0;
 
             Game.gameObject.SetActive(true);
 
             gameObject.SetActive(false);
+
+            CancelInvoke();
 
         });
 

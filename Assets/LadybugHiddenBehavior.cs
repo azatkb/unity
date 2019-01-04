@@ -36,6 +36,8 @@ public class LadybugHiddenBehavior : MonoBehaviour {
     void Timeout()
     {
 
+        Assets.scripts.ColibriGame.Instance.GameVoice(19);
+
         game1.SetActive(false);
         game2.SetActive(true);
 

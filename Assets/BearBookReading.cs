@@ -151,6 +151,8 @@ public class BearBookReading : MonoBehaviour {
 
         PlayButton.GetComponent<Button>().onClick.AddListener(() => {
 
+            CancelInvoke();
+
             Assets.scripts.ColibriGame.Instance.StopRecording();
 
             Page = 0;
@@ -158,6 +160,8 @@ public class BearBookReading : MonoBehaviour {
             Game.gameObject.SetActive(true);
 
             gameObject.SetActive(false);
+
+            Assets.scripts.ColibriGame.Instance.GameVoice(9);
 
         });
 
