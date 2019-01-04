@@ -27,6 +27,7 @@ public class MusicButtonCheck : MonoBehaviour {
 
                 game1.SetActive(false);
                 game0.SetActive(true);
+                Assets.scripts.ColibriGame.Instance.GameVoice(2);
 
             });
 
@@ -56,6 +57,8 @@ public class MusicButtonCheck : MonoBehaviour {
         game1.SetActive(false);
 
         game2.SetActive(true);
+
+        Assets.scripts.ColibriGame.Instance.GameVoice(4);
 
         foreach (Transform child in Panel.transform)
         {

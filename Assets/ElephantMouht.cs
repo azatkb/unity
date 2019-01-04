@@ -26,6 +26,8 @@ namespace Assets.scripts
                 game1.SetActive(false);
                 game0.SetActive(true);
 
+                Assets.scripts.ColibriGame.Instance.GameVoice(1);
+
             });
 
         }
@@ -55,6 +57,8 @@ namespace Assets.scripts
 
             game1.SetActive(false);
             game2.SetActive(true);
+
+            Assets.scripts.ColibriGame.Instance.GameVoice(3);
 
             SuucessCount = 0;
 

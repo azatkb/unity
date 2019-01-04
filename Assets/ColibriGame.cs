@@ -10,7 +10,8 @@ namespace Assets.scripts
         private GameObject voiceObject;
         private GameObject appObject;
         private GameObject recordManager;
-        
+        private GameObject gameVoiceManager; 
+
         public bool isRecording = false;
 
         void Start() {
@@ -24,6 +25,7 @@ namespace Assets.scripts
             this.voiceObject = GameObject.FindGameObjectWithTag("Voice");
             this.appObject = GameObject.FindGameObjectWithTag("App");
             this.recordManager = GameObject.FindGameObjectWithTag("recordManager");
+            this.gameVoiceManager = GameObject.FindGameObjectWithTag("gameVoice");
 
         }
 
@@ -137,6 +139,18 @@ namespace Assets.scripts
                 recordManager.GetComponent<ReplayCam>().BookName = null;
                 recordManager.GetComponent<ReplayCam>().StopRecording();
             }
+
+        }
+
+        public void GameVoice(int index){
+
+            if (this.gameVoiceManager == null){
+
+                this.IntObject();
+
+            }
+
+            gameVoiceManager.GetComponent<GameVoiceBahavior>().Play(index);
 
         }
 

@@ -160,6 +160,8 @@ public class BookReading : MonoBehaviour {
 
             Assets.scripts.ColibriGame.Instance.StopRecording();
 
+            Assets.scripts.ColibriGame.Instance.GameVoice(1);
+
             Page = 0;
 
             Game.gameObject.SetActive(true);

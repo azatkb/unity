@@ -54,6 +54,8 @@ public class WordBehavior : MonoBehaviour {
         game1.SetActive(false);
         game2.SetActive(true);
 
+        Assets.scripts.ColibriGame.Instance.GameVoice(2);
+
         SuccesCount = 0;
 
         foreach (Transform child in transform)

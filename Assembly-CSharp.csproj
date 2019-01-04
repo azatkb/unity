@@ -152,6 +152,7 @@
      <Compile Include="Assets\Game5Behavior.cs" />
      <Compile Include="Assets\GameData.cs" />
      <Compile Include="Assets\GameElephant.cs" />
+     <Compile Include="Assets\GameVoiceBahavior.cs" />
      <Compile Include="Assets\GetImage.cs" />
      <Compile Include="Assets\GrazTarget.cs" />
      <Compile Include="Assets\GrowPannel.cs" />
@@ -252,7 +253,6 @@
      <Compile Include="Assets\UnityLitJson\ParserToken.cs" />
      <Compile Include="Assets\UnityLitJson\Platform.cs" />
      <Compile Include="Assets\UnityLitJson\Unity\UnityTypeBindings.cs" />
-     <Compile Include="Assets\Voi.cs" />
      <Compile Include="Assets\VoiceBahavior.cs" />
      <Compile Include="Assets\WordBehavior.cs" />
      <Compile Include="Assets\WordChar.cs" />

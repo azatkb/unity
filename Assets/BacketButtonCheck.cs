@@ -27,6 +27,7 @@ public class BacketButtonCheck : MonoBehaviour {
 
                 game1.SetActive(false);
                 game0.SetActive(true);
+                Assets.scripts.ColibriGame.Instance.GameVoice(3);
 
             });
 

@@ -290,6 +290,7 @@ public class Translations : MonoBehaviour {
     public GameObject LadyGame3Tj;
 
     public GameObject VoiceBehavior;
+    public GameObject GameVoiceBehavior;
 
     public Image SoonImage;
     public Image SoonImage2;
@@ -334,6 +335,7 @@ public class Translations : MonoBehaviour {
         if (language == "En")
         {
             VoiceBehavior.GetComponent<VoiceBahavior>().TranslateEn();
+            GameVoiceBehavior.GetComponent<GameVoiceBahavior>().TranslateEn();
             SoonImage.sprite = SoonSpriteEn1;
             SoonImage2.sprite = SoonSpriteEn2;
         }
@@ -341,6 +343,7 @@ public class Translations : MonoBehaviour {
         {
 
             VoiceBehavior.GetComponent<VoiceBahavior>().TranslateTj();
+            GameVoiceBehavior.GetComponent<GameVoiceBahavior>().TranslateTj();
             SoonImage.sprite = SoonSpriteTj1;
             SoonImage2.sprite = SoonSpriteTj2;
 
