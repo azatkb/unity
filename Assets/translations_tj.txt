@@ -47,7 +47,7 @@
 	"label_collect_puzzle": "Муамморо ҷамъ кунед.",
 	"label_find_chicks": "Ҳамаи ҷӯҷаҳои дар тухм бударо ёбед.",
 
-	"label_toss_apples": "Себҳоро ба даҳони филча партоед",
+	"label_toss_apples": "Себҳоро ба даҳони филча партоедю",
 	"label_elephant_sound": "Садои фил чӣ гуна аст? Сабтро гӯш карда ҳарфи мувофиқро интихоб намоед.",
 	"label_count_apples_together": "Сабтро гӯш карда сабади мувофиқро интихоб намоед.",
 	"label_learn_draw_elephant": "Биё бо ҳам расми филро кашем!",
@@ -63,7 +63,7 @@
 	"label_help_collect_mushrooms": "Ба кӯдакон кӯмак кунед, то замбуруғҳоро дар сабад гузоранд.",
 	"label_match_names_children": "Номи бачаҳоро аз рӯи қаҳрамонҳои ҳикоя ҷобаҷогузорӣ намоед.",
 	"label_find_animal_name": "Ин кадом ҳайвон аст? Номашро ёбед.",
-	"label_build_house_children": "Хонае, ки дар он бачаҳо зиндагӣ мекарданд, созед.",
+	"label_build_house_children": "Хонаеро, ки дар он бачаҳо зиндагӣ мекарданд, созед.",
 	"label_repeat_after_me": "Дӯсти беҳтарини хирс кӣ буд?",
 	"label_one_elephant": "Як фил",
 	"label_two_rabbits": "Ду харгуш",
@@ -92,7 +92,7 @@
     "label_cloud4": "Аввал шумо бояд сагро бедор кунед",
 
     "label_the_elephant": "Фил",
-    "label_the_fox": "Фарзанди азиз",
+    "label_the_fox": "Фарзанди аз ҳама азиз",
     "label_the_bear": "Замбуруғчинӣ",
     "label_the_dog": "Орзуи Далерҷон",
     "label_the_ladybug": "Офтобак ва Момохолак",

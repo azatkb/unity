@@ -164,7 +164,7 @@ public class SettingsPanel : MonoBehaviour {
         }
         else
         {
-            this.VolumeSliderInput.value = 0.5f;
+            this.VolumeSliderInput.value = 0.3f;
         }
 
         MusicButotn0.onClick.AddListener(() =>
