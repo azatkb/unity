@@ -10,21 +10,21 @@ namespace Assets.scripts {
 
         public bool Draggable = true;
 
-        private Vector3 originalPos = new Vector3(0, 0, 0);
+        public Vector3 originalPos = new Vector3(0, 0, 0);
 
         void Start(){
 
-            originalPos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
-
-            //Invoke("SetPosition", 3);
+            InvokeRepeating("SetPosition", 1, 1f);
 
         }
 
         void SetPosition(){
 
-            if(originalPos.x == 0){
+            if((transform.position.x != 0) && (transform.position.y != 0)){
 
-                originalPos = new Vector3(transform.position.x, transform.position.y, transform.position.z); 
+                originalPos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+      
+                CancelInvoke("SetPosition");
 
             }
 
@@ -53,21 +53,16 @@ namespace Assets.scripts {
         public void AfterDrop(){
 
             if (Draggable){
-                transform.position = new Vector3(originalPos.x, originalPos.y, originalPos.z);
+                transform.position = originalPos;
             }
         }
 
         public void Reset(){
 
 
-            Debug.Log(gameObject.name);
-            Debug.Log(transform.position.x);
-
             Draggable = true;
 
-            transform.position = new Vector3(originalPos.x, originalPos.y, originalPos.z);
-
-            gameObject.SetActive(true);
+            transform.position = originalPos;
 
 
         }

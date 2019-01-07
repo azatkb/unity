@@ -53,13 +53,13 @@
 
 	"label_what_animal_fox": "What animal is this?",
 	"label_erase_animal_not_story": "Erase the animal that was not in the story.",
-	"label_name_animal": "Match the names of the animals with their pictures.",
-	"label_collect_puzzle_2": "Put the puzzle together.",
+	"label_name_animal": "Match the animals with their picture.",
+	"label_collect_puzzle_2": "Collect the puzzle pieces.",
 	"label_learn_draw_rabbit": "Let’s learn to draw an rabbit!",
 	"label_prepare_draw_rabbit": "Please prepare a sheet of paper, a pencil, and an eraser. When you ready, please tap the “Next” button",
 
-	"label_help_collect_mushrooms": "Help the children collect the mushrooms into the basket.",
-	"label_match_names_children": "Match the names of the children to the characters.",
+	"label_help_collect_mushrooms": "  Help the children fill their baskets with mushrooms.",
+	"label_match_names_children": "Match the names of the children with the correct character.",
 	"label_find_animal_name": "What animal do you see? Fill in the correct letters.",
 	"label_build_house_children": "Build the children's house.",
 	"label_repeat_after_me": "Who happened to be the bear’s best friend?",
@@ -72,7 +72,7 @@
 	"label_grade2": "Grade 3-4",
 	"label_match_sount": "Listen and make a correct word",
 
-    "label_intro": "Hi! I am Donoyak and I am so excited to go to school this year. Finally, no one will call me the little one. I bet you also want to grow up soon. Do you want to find out how?",
+    "label_intro": "Hi! I am Donoyak and I am so excited to go to school this year. Finally, no one will call me the little. I bet you also want to grow up soon. Do you want to find out how?",
     "label_intro2": "When I came out of my egg, I was very small and didn’t know anything.",
     "label_intro3": "To grow up and become smart, I had to play challenging games and read a lot! Do you want to do this with me?",
     "label_intro4": "On the screen you can see five fun books, exciting tasks and games. At the end of each book, there is food for me so I can grow big and smart. You can help feed me by reading these books and playing the games. Let’s start by reading about our friend the elephant.",

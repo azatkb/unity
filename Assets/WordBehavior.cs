@@ -17,11 +17,7 @@ public class WordBehavior : MonoBehaviour {
 
     void Start () {
 
-        //ReturnButton.onClick.AddListener(() => {
 
-        //    game1.SetActive(false);
-        
-        //});
 
     }
 	
@@ -66,7 +62,7 @@ public class WordBehavior : MonoBehaviour {
         if(CharsPanel != null){
 
             foreach (Transform child in CharsPanel.transform)
-            {
+            { 
                 child.GetComponent<Assets.scripts.WordChar>().Reset();
             }
 

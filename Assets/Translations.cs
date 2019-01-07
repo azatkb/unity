@@ -439,7 +439,7 @@ public class Translations : MonoBehaviour {
 
             DogGame1Title.GetComponent<Text>().text = Lang["label_help_puppy_clean"].ToString();
             DogGame2Title.GetComponent<Text>().text = Lang["label_animals_names_letters"].ToString();
-            DogGame3Title.GetComponent<Text>().text = Lang["label_collect_puzzle"].ToString();
+            DogGame3Title.GetComponent<Text>().text = Lang["label_collect_puzzle_2"].ToString();
             DogGame4Title.GetComponent<Text>().text = Lang["label_find_chicks"].ToString();
 
             LadyBugGame1Title.GetComponent<Text>().text = Lang["label_hiding_beetle"].ToString();
