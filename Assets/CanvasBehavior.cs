@@ -21,6 +21,8 @@ public class CanvasBehavior : MonoBehaviour {
             child.transform.position = transform.position;
         }
 
+        //PlayerPrefs.DeleteAll();
+
 
     }
 
