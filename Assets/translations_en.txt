@@ -101,8 +101,8 @@
     "label_the_record": "Read and record myself",
 
     "label_book_author1": "Azizi Aziz",
-    "label_book_author2": "Nargishi Murodal",
-    "label_book_author3": "Firuza Khozanazarova",
+    "label_book_author2": "Nargisi Murodali",
+    "label_book_author3": "Firuza Khujanazarova",
     "label_book_author4": "Gulniso Rizvonshoeva",
     "label_book_author5": "Gulsara Avazova",
 

@@ -265,6 +265,14 @@ public class BookReading : MonoBehaviour {
 
         currentWordSecond = 0;
 
+        StartCoroutine(TimeoutWords());
+
+    }
+
+    IEnumerator  TimeoutWords(){
+
+        yield return new WaitForSeconds(0.2f);
+
         InitPageWords();
 
         InitVoice();

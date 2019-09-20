@@ -100,8 +100,8 @@
     "label_the_record": "Сухани худро сабт кунед",
 
     "label_book_author1": "Азизи Азиз",
-    "label_book_author2": "Наргиси Муродалӣ ",
-    "label_book_author3": "Фирӯза Хоҷаназарова",
+    "label_book_author2": "Nargisi Murodali",
+    "label_book_author3": "Firuza Khujanazarova",
     "label_book_author4": "Гулнисо Ризвоншоева",
     "label_book_author5": "Гулсара Авазова",
 

@@ -267,7 +267,17 @@ public class BearBookReading : MonoBehaviour {
         Words = new List<string>();
 
         currentWordSecond = 0;
+        
+        StartCoroutine(TimeoutWords());
+
+    }
+
+    IEnumerator  TimeoutWords(){
+
+        yield return new WaitForSeconds(0.2f);
+
         InitPageWords();
+
         InitVoice();
 
         InvokeRepeating("RunWords", 0, 0.1f);
